@@ -1,0 +1,43 @@
+body {
+    background-color: #99c2ff;
+}
+
+main {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+    grid-gap: 1em;
+}
+
+.augustPicture {
+    border-radius: 50%;
+    justify-self: end;
+    grid-row: 1/4;
+}
+
+.name {
+    text-align: center;
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+
+
+.ulLinks {
+    display: inline-block;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
