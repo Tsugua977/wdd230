@@ -2,13 +2,6 @@ body {
     background-color: #99c2ff;
 }
 
-main {
-    background-color: antiquewhite;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
 .headerGrid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -29,8 +22,12 @@ main {
     grid-row: 2/3;
 }
 
-
-
+main {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .ulLinks {
     display: inline-block;
