@@ -1,0 +1,21 @@
+@media only screen and (min-width: 35.5em) {
+    .headerGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 30%;
+        grid-gap: 1em;
+    }
+    
+    .augustPicture {
+        margin-right: 10px;
+        grid-row: 1/4;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    main{
+        font-size: 1em;
+    }
+}

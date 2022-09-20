@@ -2,20 +2,14 @@ body {
     background-color: #99c2ff;
 }
 
-.headerGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 30% 30%;
-    grid-gap: 1em;
-}
-
 .augustPicture {
-    border-radius: 50%;
-    justify-self: end;
-    grid-row: 1/4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name {
+    font-size: 1.5em;
     text-align: center;
     justify-self: start;
     grid-column: 2/3;
@@ -28,6 +22,7 @@ main {
     width: 80%;
     margin: 0 auto;
     font-family: 'Martel', serif;
+    font-size: 0.8em;
 }
 
 .ulLinks {
