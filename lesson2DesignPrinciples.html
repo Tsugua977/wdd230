@@ -6,40 +6,47 @@
     <meta name="August Pelissero" content="My project portal for WWD230: Web Development I.">
     <title>August Pelissero's Assignment Portal</title>
     <link rel="stylesheet" href="css/normalize.css">
-
+    <link rel="stylesheet" href="css/lesson2Small.css">
+    <link rel="stylesheet" href="css/lesson2Medium.css">
+    <link rel="stylesheet" href="css/lesson2Large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Design Principles Document</h1>
-        <h2>August J. Pelissero</h2>
+<body id="body">
+    <header id="header">
+        <h1 class="title">Design Principles Document</h1>
+        <h2 class="name">August J. Pelissero</h2>
     </header>
 
-    <main>
-        <h3>Alignment</h3>
-        <p>EightyTwo</p>
-        <a href="http://www.eightytwodesign.com/">http://www.eightytwodesign.com/</a>
-        <img src="images/alignment.jpg" class="alignmentPicture" Alt="Mobile screenshot of the EightyTwo website." width="200">
-        <p>The alignment on this site helps draw the viewer to the center of the screen. By placing the most important items in a single column in the center of the screen, it helps the web designers guide the audiance to where they want them to go. This simple guiding trick is also enhanced by the decortive borders around the central boxes.</p>
+    <main class="mainGrid">
+        <div class="alignmentGrid">
+            <h3>Alignment</h3>
+            <p class="alignmentWebsite">EightyTwo</p>
+            <a href="http://www.eightytwodesign.com/" class="alignmentLink">http://www.eightytwodesign.com/</a>
+            <img src="images/alignment.jpg" class="alignmentPicture" Alt="Mobile screenshot of the EightyTwo website.">
+            <p class="alignmentText">The alignment on this site helps draw the viewer to the center of the screen. By placing the most important items in a single column in the center of the screen, it helps the web designers guide the audiance to where they want them to go. This simple guiding trick is also enhanced by the decortive borders around the central boxes.</p>
+        </div>
 
-        <h3>Contrast</h3>
-        <p>Creative Park</p>
-        <a href="https://www.creativepark.fr/">https://www.creativepark.fr/</a>
-        <img src="images/contrast.jpg" class="contrastPicture" Alt="Mobile screenshot of the Creative Park website." width="200">
-        <p>There are two aspects that help the contrast on this site: color and size. All the lettering on this site is in plain white, which helps it stand out agaainst the black background. The size of the word "Beatport" also helps to draw the viewer's eye to the most important aspect on the website.</p>
+        <div class="contrastGrid">
+            <h3>Contrast</h3>
+            <p id="contrastWebsite">Creative Park</p>
+            <a class="contrastLink" href="https://www.creativepark.fr/">https://www.creativepark.fr/</a>
+            <img src="images/contrast.jpg" class="contrastPicture" Alt="Mobile screenshot of the Creative Park website." width="200">
+            <p id="contrastText">There are two aspects that help the contrast on this site: color and size. All the lettering on this site is in plain white, which helps it stand out agaainst the black background. The size of the word "Beatport" also helps to draw the viewer's eye to the most important aspect on the website.</p>
+        </div>
 
-        <h3>White Space</h3>
-        <p>Harvard Art Museums</p>
-        <a href="https://harvardartmuseums.org/">https://harvardartmuseums.org/</a>
-        <img src="images/whitespace.jpg" class="whitespacePicture" Alt="Mobile screenshot of the Harvard Art Museums website." width="200">
-        <p>The whitespace here helps to guide the viewer more than to draw them to the main point of the page. Each section has considerable white space inbetween them. This alllows the viewer to move from one object to another, helping them break down each part of the website into digestiable chunks. It also helps draw the user further down the website.</p>
+        <div class="whiteGrid">
+            <h3>White Space</h3>
+            <p id="whiteSpWebsite">Harvard Art Museums</p>
+            <a class="whiteSpLink" href="https://harvardartmuseums.org/">https://harvardartmuseums.org/</a>
+            <img src="images/whitespace.jpg" class="whiteSpPicture" Alt="Mobile screenshot of the Harvard Art Museums website." width="200">
+            <p id="whiteSpText">The whitespace here helps to guide the viewer more than to draw them to the main point of the page. Each section has considerable white space inbetween them. This alllows the viewer to move from one object to another, helping them break down each part of the website into digestiable chunks. It also helps draw the user further down the website.</p>
+        </div>
+    
     </main>
 </body>
-
-
 
 <footer id="footer">
     <p>@ <const id="year"></const> | August Pelissero | Buckeye, AZ</p>

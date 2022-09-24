@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+}
+
+header {
+    background-color: white;
+    padding: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 16px;
+}
+
+.name{
+    text-align: center;
+    font-size: 12px;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1em;
+    
+}
+
+h3 {
+    background-color: rgb(207, 207, 207);
+    padding-top: 0px;
+    
+    border-radius: 25px;
+    text-align: center;
+    font-size: 9.38px;
+    
+}
+
+a {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+div{
+    border-radius: 25px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 50px auto auto;
+    margin-right: -50px;
+    padding: 0px 10px 0px 10px;
+    margin-left: 25px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.alignmentWebsite{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.alignmentLink{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.alignmentPicture{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.alignmentText{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contrastWebsite{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contrastLink{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.contrastPicture{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 100%;
+    height: auto;
+}
+
+.contrastText{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.whiteSpWebsite{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.whiteSpLink{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.whiteSpPicture{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 100%;
+    height: auto;
+
+}
+
+.whiteSpText{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    
+}

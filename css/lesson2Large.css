@@ -1,0 +1,41 @@
+@media only screen and (min-width: 70.5em) {
+    .title{
+        font-size: 32px;
+    }
+    
+    .name{
+        font-size: 24px;
+    }
+
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        
+    }
+
+    h3{
+        font-size: 18.72px;
+        padding-bottom: 20px;
+    }
+
+    div {
+        margin-left: 85px;
+        
+    }
+
+    .whiteGrid{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+    
+}
