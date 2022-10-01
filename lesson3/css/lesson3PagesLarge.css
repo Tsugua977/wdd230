@@ -1,0 +1,126 @@
+@media only screen and (min-width: 70em) {
+    header {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    
+    .saguaroLogo {
+        grid-row: 1/2;
+        justify-self: center;
+        width: 250px;
+    }
+    
+    .saguaroTitle {
+        grid-row: 2/3;
+        text-align: center;
+        align-self: start;
+        padding: 10px 0 20px 0;
+        font-size: 26px;
+        margin: -10px 0 0 0;
+    }
+
+    nav {
+        flex-direction: row;
+        margin: 30px 90px 0 90px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .purposeParagraph {
+        margin: 0 300px 0 300px;
+        font-size: 16px;
+    }
+
+    .domainName{
+        padding: 10px;
+        margin: 0 400px 0 400px;
+        font-size: 16px;
+    }
+
+    .audianceDescrip {
+        margin: 0 250px 0 250px;
+    }
+
+    .personas {
+        width: 700px;
+        height: 520px;
+    }
+
+    .shellyPic {
+        width: 200px;
+    }
+      
+    .shellyDescrip {
+        font-size: 16px;
+    }
+      
+    .markPic {
+        width: 200px;
+    }
+      
+    .markDescrip{
+        font-size: 16px;
+    }
+
+    .senarios {
+        margin: 0 400px 0 400px;
+        font-size: 16px;
+    }
+
+    .colorAndFontGrid {
+        width: 600px;
+        height: 280px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 5em 30em;
+        grid-template-rows: 6em 6em 6em;
+    }
+    
+    .itemOne {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    
+    .DescripOne {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .itemTwo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    
+    .DescripTwo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .itemThree {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+    }
+    
+    .DescripThree {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    footer{
+        margin: 100px 300px 0 300px;
+    }
+
+}
