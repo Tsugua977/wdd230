@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="August Pelissero" content="My project portal for WWD230: Web Development I.">
+    <title>August Pelissero's Assignment Portal</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/saguaroChamberLogo.png" class="saguaroLogo" alt="Saguaro Chamber's Logo" width="200">
+        <h1 class="saguaroTitle">Saguaro Chamber</h1>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <div class="fullDate"></div>
+        <a href="https://www.facebook.com/"><img src="images/facebookLogo.png" class="facebook" alt="Facebook Logo" width="40"></a>
+        <a href="https://twitter.com/?lang=en"><img src="images/twitterLogo.png" class="twitter" alt="Twitter Logo" width="40"></a>
+    </header>
+
+    <main>
+        <div class="event"><p>Event</p></div>
+        <div class="callToAction"><p>Hero with Site name and call to action</p></div>
+        <div class="weather"><p>Weather</p></div>
+        <div class="news"><p>News Release</p></div>
+        <div class="join"><p>Join</p></div>
+        <div class="spotlight">
+            <p>Spotlight 1</p>
+            <p>Spotlight 2</p>
+        </div>
+    </main>
+</body>
+
+<footer id="footer">
+    <img src="images/saguaroChamberLogo.png" class="saguaroLogoFooter" alt="Saguaro Chamber's Logo" width="75">
+    <p>Saguaro Chamber</p>
+    <p>13220 Cactus Rd, Phenoix, AZ, 85003</p>
+    <p>saguaro@gmail.com</p>
+    <p>(480) 867-5309</p>
+    <p>Location Map</p>
+    <p>@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ</p>
+    <p>Last Updated: <const id="lastUpdate"></const> </p>
+</footer>
+<script src="scripts/getDate.js"></script>
+<script src="scripts/hamburgerButton.js"></script>
+</html>
