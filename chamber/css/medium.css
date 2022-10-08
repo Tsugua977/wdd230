@@ -1,17 +1,124 @@
 @media only screen and (min-width: 35rem) {
+
+    .saguaroLogo {
+        width: 200px;
+    }
     
-    nav button {
-        display: none;
+    .saguaroTitle {
+        font-size: 32px;
     }
 
-    nav ul#primaryNav {
-        display: flex;
-        margin-left: 2vw;
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    
+    .fullDate {
+        font-size: 18px;
     }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    
+    .facebook {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        align-self: center;
+        margin: 0 0 0 0;
+    }
+    
+    .twitter {
+        grid-column: 5/6;
+        grid-row: 1/2;
+        align-self: center;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(6, auto);
+        margin: 20px 70px;
+    }
+    
+    .event {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: 200px;
+    }
+    
+    .callToAction {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .weather {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        height: 200px;
+    }
+    
+    .news {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+    .join {
+        grid-column: 1/3;
+        grid-row: 6/7;
+        height: 200px;
+    }
+    
+    .spotlight {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+    footer {
+        display: grid;
+        grid-template-columns: auto 180px auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    .saguaroLogoFooter {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: end;
+        margin: 0 0 0 0;
+        width: 150px;
+    }
+    
+    .nameFooter {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 24px;
+        font-size: 16px;
+        align-self: end;
+    }
+    
+    .addressFooter{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 16px;
+    }
+    
+    .emailFooter {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        font-size: 16px;
+        justify-self: start;
+        margin: 1px 0 0 0;
+    }
+    
+    .phoneFooter {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        font-size: 16px;
+        justify-self: start;
+        margin-left: 16px;
+    }
+    
+    .locationFooter {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 16px;
+    }
+    
+    .creatorInfo {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        font-size: 16px;
     }
 }

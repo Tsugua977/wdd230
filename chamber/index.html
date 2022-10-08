@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/saguaroChamberLogo.png" class="saguaroLogo" alt="Saguaro Chamber's Logo" width="200">
+        <img src="images/saguaroChamberLogo.png" class="saguaroLogo" alt="Saguaro Chamber's Logo">
         <h1 class="saguaroTitle">Saguaro Chamber</h1>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -28,8 +29,8 @@
             </ul>
         </nav>
         <div class="fullDate"></div>
-        <a href="https://www.facebook.com/"><img src="images/facebookLogo.png" class="facebook" alt="Facebook Logo" width="40"></a>
-        <a href="https://twitter.com/?lang=en"><img src="images/twitterLogo.png" class="twitter" alt="Twitter Logo" width="40"></a>
+        <a href="https://www.facebook.com/" class="facebook"><img src="images/facebookLogo.png" alt="Facebook Logo" width="40"></a>
+        <a href="https://twitter.com/?lang=en" class="twitter"><img src="images/twitterLogo.png" alt="Twitter Logo" width="40"></a>
     </header>
 
     <main>
@@ -46,14 +47,13 @@
 </body>
 
 <footer id="footer">
-    <img src="images/saguaroChamberLogo.png" class="saguaroLogoFooter" alt="Saguaro Chamber's Logo" width="75">
-    <p>Saguaro Chamber</p>
-    <p>13220 Cactus Rd, Phenoix, AZ, 85003</p>
-    <p>saguaro@gmail.com</p>
-    <p>(480) 867-5309</p>
-    <p>Location Map</p>
-    <p>@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ</p>
-    <p>Last Updated: <const id="lastUpdate"></const> </p>
+    <img src="images/saguaroChamberLogo.png" class="saguaroLogoFooter" alt="Saguaro Chamber's Logo">
+    <p class="nameFooter">Saguaro Chamber</p>
+    <p class="addressFooter">13220 Cactus Rd, <br>Phenoix, AZ, 85003</p>
+    <p class="emailFooter">saguaro@gmail.com</p>
+    <p class="phoneFooter">(480) 867-5309</p>
+    <p class="locationFooter">Location Map</p>
+    <p class="creatorInfo">@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ | Last Updated: <const id="lastUpdate"></const></p>
 </footer>
 <script src="scripts/getDate.js"></script>
 <script src="scripts/hamburgerButton.js"></script>

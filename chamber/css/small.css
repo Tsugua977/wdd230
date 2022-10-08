@@ -4,16 +4,37 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    background-color: #ffa64c;
+}
+
+h1 {
+    font-family:'Alegreya', serif, sans-serif;
+}
+
+h2 {
+    font-family:'Alegreya', serif, sans-serif;
+}
+
+p {
+    font-family: 'Roboto', serif, sans-serif;
+}
+
 header{
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto 40px 40px;
+    grid-template-rows: auto auto 50px;
     grid-gap: 1em;
     padding: 20px;
 }
 
 nav{
-    background-color: rgb(215, 215, 215);
+    align-self: center;
+    justify-self: center;
+    margin-left: -10px;
+    margin-right: 10px;
+    grid-column: 1/6;
+    grid-row: 2/3;
 }
 
 nav button {
@@ -21,6 +42,8 @@ nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
+    color: white;
+    align-self: center;
 }
 
 nav ul{
@@ -33,12 +56,13 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    border-top: 1px solid rgb(0, 0, 0);
+    font-size: 24px;
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(237, 237, 237, 0.2);
     color: white;
 }
 
@@ -47,7 +71,7 @@ nav ul li a:hover {
 }
 
 nav ul {
-    display: none
+    display: none;
 }
 
 nav ul.open {
@@ -73,80 +97,140 @@ nav ul.open {
 .saguaroLogo {
     grid-column: 1/2;
     grid-row: 1/2;
+    justify-self: end;
+    width: 100px;
 }
 
 .saguaroTitle {
     grid-column: 2/3;
     grid-row: 1/2;
-}
-
-.primaryNav {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    align-self: center;
+    justify-self: start;
+    color: white;
+    font-size: 22px;
 }
 
 .fullDate {
     grid-column: 1/6;
-    grid-row: 2/3;
+    grid-row: 3/4;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .facebook {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/2;
+    align-self: center;
+    margin: 0 0 0 0;
 }
 
 .twitter {
-    grid-column: 5/6;
+    grid-column: 4/5;
     grid-row: 1/2;
+    align-self: center;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
     grid-gap: 1em;
-    margin: 20px; 
+    margin: 20px 50px;
 }
 
 div {
-    background-color: lightgray;
-    border-style: solid;
-    border-color: black;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(229, 229, 229);
 }
 
 .event {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    height: 200px;
-}
-
-.callToAction {
-    grid-column: 2/4;
-    grid-row: 1/3;
-}
-
-.weather {
     grid-column: 1/2;
     grid-row: 2/3;
     height: 200px;
 }
 
-.news {
-    grid-column: 2/4;
-    grid-row: 3/4;
+.callToAction {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 200px;
 }
 
-.join {
+.weather {
     grid-column: 1/2;
     grid-row: 3/4;
     height: 200px;
 }
 
-.spotlight {
-    grid-column: 4/5;
-    grid-row: 1/4;
+.news {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    height: 200px;
 }
 
-footer {
+.join {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    height: 200px;
+}
 
+.spotlight {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    height: 400px;
+}
+
+.saguaroLogoFooter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+}
+
+.nameFooter {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.addressFooter{
+    text-align: center;
+    margin-top: 1px;
+    color: white;
+    font-size: 14px;
+}
+
+.emailFooter {
+    text-align: center;
+    margin-top: 1px;
+    color: white;
+    font-size: 14px;
+}
+
+.phoneFooter {
+    text-align: center;
+    margin-bottom: 1px;
+    align-self: end;
+    color: white;
+    font-size: 14px;
+}
+
+
+.locationFooter {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.creatorInfo {
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding-top: 5px;
+    color: white;
+    font-size: 12px;
 }
