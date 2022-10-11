@@ -62,12 +62,12 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: rgba(237, 237, 237, 0.2);
+    background-color: rgba(115, 115, 115, 0.5);
     color: white;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
