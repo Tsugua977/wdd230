@@ -1,32 +1,41 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
-const list = document.querySelector("list");
+const list = document.querySelector("ul");
 
 button.addEventListener("click", function CreateChapter() {
-    //a) create an li element
-    const li = document.createElement("li");
+    //Add code for the text box's value.
+    const chapter = input.value;
+    input.value = "";
 
-    //b) create a delete button
+    //Creates list element.
+    const listItem = document.createElement("li");
+
+    //Creates text element for the list.
+    const text = document.createElement("span");
+
+    //Creates delete button for the list.
     const delButton = document.createElement("button");
 
-    //c) populate the li elements textContent or innerHTML with the input
-    const input = document.getElementById("favchap");
-    input.appendChild(li);
-
-    //d) populate the button textContent with an ❌
-    button.textContent = ("❌");
+    //Populates the delete button with ❌.
+    delButton.textContent = ("❌");
     
-    //e)append the li element with the delete button
-    button.appendChild(input);
+    //Apends the text to the list.
+    listItem.appendChild(text);
 
-    //f) append the list element with the li element just created and appended with text and the delete button
-    li.appendChild(list);
-    
-    //g) add an event listener to the delete button that removes the li element when clicked
-    button.addEventListener("click", list.removeChild(input));
+    //Sets the text to the user's input.
+    text.textContent = chapter;
 
-    //h) send the focus to the input element
+    //Appends the button to the list.
+    listItem.appendChild(delButton);
 
-    //i) clean up the successful add of a chapter by changing the input to nothing or the empty string and setting the focus to the input.
+    //Appends the list item to the ul.
+    list.appendChild(listItem);
+
+    delButton.addEventListener('click', () => {
+        list.removeChild(listItem);
+    });
+
+    //Resets the input box.
+    input.focus();
 
 });
