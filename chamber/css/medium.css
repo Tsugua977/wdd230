@@ -1,5 +1,13 @@
 @media only screen and (min-width: 35rem) {
 
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
     .saguaroLogo {
         width: 200px;
     }
@@ -44,6 +52,15 @@
         grid-row: 2/3;
     }
     
+    .actionJoin {
+        position: absolute;
+        top: 100px;
+        left: 580px;
+        font-size: 24px;
+        padding: 15px;
+        padding: 10px 25px;
+    }
+
     .weather {
         grid-column: 1/3;
         grid-row: 3/4;
@@ -64,8 +81,29 @@
     .spotlight {
         grid-column: 1/3;
         grid-row: 4/5;
+        height: 320px;
     }
     
+    .bugDiv {
+        margin: 5px 100px 5px 90px;
+        width: 270px;
+        height: 300px;
+    }
+    
+    .bugImg {
+        width: 60px;
+    }
+    
+    .gardenDiv {
+        margin: 5px 15px 5px 0px;
+        width: 270px;
+        height: 300px;
+    }
+    
+    .gardenImg {
+        width: 60px;
+    }
+
     footer {
         display: grid;
         grid-template-columns: auto 180px auto;

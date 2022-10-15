@@ -13,7 +13,7 @@ dateDiv.innerHTML = date;
 currentDate = d.getDay();
 
 if (currentDate == 1 || currentDate == 2) {
-    document.querySelector("#meetingBanner").style.display = "block";
+    document.getElementById("meetingBanner").style.display = "block";
 } else {
-    document.querySelector("#meetingBanner").style.display = "none";
-}
+    document.getElementById("meetingBanner").style.display = "none";
+};

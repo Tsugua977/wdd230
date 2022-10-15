@@ -13,10 +13,12 @@ h1 {
 }
 
 h2 {
+    font-size: 20px;
     font-family:'Alegreya', serif, sans-serif;
 }
 
 p {
+    font-size: 14px;
     font-family: 'Roboto', serif, sans-serif;
 }
 
@@ -25,7 +27,7 @@ p {
     padding: 5px;
     font-size: 22px;
     margin-top: 3px;
-}
+} 
 
 header{
     display: grid;
@@ -155,6 +157,7 @@ div {
     grid-column: 1/2;
     grid-row: 2/3;
     height: 200px;
+    text-align: center;
 }
 
 .callToAction {
@@ -172,12 +175,14 @@ div {
 
 .actionJoin {
     position: absolute;
-    top: 300px;
-    left: 500px;
-    font-size: 20px;
+    top: 100px;
+    left: 250px;
+    font-size: 24px;
     background-color: #69cdf2;
     color: white;
-    padding: 15px;
+    padding: 10px 25px;
+    font-family: 'Oswald', serif, sans-serif;
+    padding: 10px;
 }
 
 .weather {
@@ -195,18 +200,51 @@ div {
     grid-column: 1/2;
     grid-row: 4/5;
     height: 200px;
+    text-align: center;
 }
 
 .join {
     grid-column: 1/2;
     grid-row: 6/7;
     height: 200px;
+    text-align: center;
+}
+
+.joinHeader {
+    background-color: #69cdf2;
+    color: white;
+    margin: 20px 90px 30px 90px;
+    padding: 10px;
+    font-family: 'Oswald', serif, sans-serif;
 }
 
 .spotlight {
     grid-column: 1/2;
     grid-row: 5/6;
-    height: 400px;
+    height: 330px;
+    text-align: center;
+}
+
+.bugDiv {
+    margin: 5px 3px 5px 10px;
+    width: 200px;
+    height: 310px;
+    float: left;
+}
+
+.bugImg {
+    width: 70px;
+}
+
+.gardenDiv {
+    margin: 5px 0px;
+    width: 205px;
+    height: 310px;
+    float: left;
+}
+
+.gardenImg {
+    width: 70px;
 }
 
 .saguaroLogoFooter {
