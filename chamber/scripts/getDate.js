@@ -9,3 +9,11 @@ document.getElementById("year").innerHTML = getYear;
 document.getElementById("lastUpdate").innerHTML = lastMod;
 
 dateDiv.innerHTML = date;
+
+currentDate = d.getDay();
+
+if (currentDate == 1 || currentDate == 2) {
+    document.querySelector("#meetingBanner").style.display = "block";
+} else {
+    document.querySelector("#meetingBanner").style.display = "none";
+}
