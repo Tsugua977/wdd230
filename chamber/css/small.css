@@ -203,6 +203,10 @@ div {
     text-align: center;
 }
 
+.newsText {
+    margin: 7px;
+}
+
 .join {
     grid-column: 1/2;
     grid-row: 6/7;
