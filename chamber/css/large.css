@@ -119,4 +119,26 @@
         grid-row: 1/4;
         height: auto;
     }
+
+    .bugDiv {
+        margin: 5px 10px 5px 20px;
+        width: 300px;
+        height: 310px;
+        
+    }
+    
+    .bugImg {
+        width: 70px;
+    }
+    
+    .gardenDiv {
+        margin: 5px 10px 5px 20px;
+        width: 300px;
+        height: 310px;
+        
+    }
+    
+    .gardenImg {
+        width: 70px;
+    }
 }
