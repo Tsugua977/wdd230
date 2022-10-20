@@ -165,12 +165,21 @@ div {
     grid-row: 1/2;
     height: 200px;
     position: relative;
+
 }
 
 .actionWelcome {
-    margin: 20px 5px 5px 20px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
     color: black;
     font-size: 28px;
+}
+
+.heroImg {
+    object-fit: contain;
+    margin: auto;
+    display: block;
 }
 
 .actionJoin {
@@ -237,7 +246,7 @@ div {
 }
 
 .bugImg {
-    width: 70px;
+    width: 50px;
 }
 
 .gardenDiv {
@@ -248,7 +257,7 @@ div {
 }
 
 .gardenImg {
-    width: 70px;
+    width: 50px;
 }
 
 .saguaroLogoFooter {

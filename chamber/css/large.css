@@ -69,10 +69,11 @@
     
     main {
         display: grid;
-        grid-template-columns: 350px 350px 350px 350px;
+        grid-template-columns: 350px 310px 310px 350px;
         grid-template-rows: repeat(3, auto);
         grid-gap: 1em;
         margin: 20px 0px 20px 35px;
+        padding: 0 0 0 40px;
     }
     
     .event {
@@ -87,10 +88,22 @@
         height: auto;
     }
     
+    .actionWelcome {
+        position: absolute;
+        top: 5px;
+        left: 30px;
+    }
+
+    .heroImg {
+        object-fit: contain;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
     .actionJoin {
         position: absolute;
         top: 300px;
-        left: 480px;
+        left: 400px;
         font-size: 24px;
         padding: 15px;
         padding: 10px 25px;
