@@ -107,7 +107,6 @@ nav ul.open {
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: end;
-    width: 100px;
 }
 
 .saguaroTitle {
@@ -165,7 +164,9 @@ div {
     grid-row: 1/2;
     height: 200px;
     position: relative;
-
+    background-image: url(images/wdd230OrgSmall.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 .actionWelcome {
@@ -245,8 +246,8 @@ div {
     float: left;
 }
 
-.bugImg {
-    width: 50px;
+main figure.bugImg img {
+    
 }
 
 .gardenDiv {

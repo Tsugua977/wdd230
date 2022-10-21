@@ -34,7 +34,6 @@
         grid-column: 1/2;
         grid-row: 1/2;
         justify-self: end;
-        width: 200px;
     }
     
     .saguaroTitle {
@@ -86,6 +85,7 @@
         grid-column: 2/4;
         grid-row: 1/3;
         height: auto;
+        overflow: hidden;
     }
     
     .actionWelcome {
@@ -94,10 +94,9 @@
         left: 30px;
     }
 
-    .heroImg {
-        object-fit: contain;
-        margin: 10px auto 0 auto;
-        display: block;
+    main figure.heroImg img{
+        display: flex;
+        margin: 15px 0 0 20px;
     }
 
     .actionJoin {
@@ -138,10 +137,6 @@
         width: 300px;
         height: 310px;
         
-    }
-    
-    .bugImg {
-        width: 70px;
     }
     
     .gardenDiv {

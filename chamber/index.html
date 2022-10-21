@@ -19,7 +19,15 @@
 <body>
     <div id="meetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
-        <img src="images/saguaroChamberLogo.png" class="saguaroLogo" alt="Saguaro Chamber's Logo">
+        <figure class="saguaroLogo">
+            <img src="images/saguaroChamberLogo.png" 
+                sizes="50vw"
+                srcset="images/saguaroChamberLogoSmall.jpg 200w,
+                        images/saguaroChamberLogoMedium.jpg 500w,
+                        images/saguaroChamberLogoLarge.jpg 800w"
+                        >
+            </figure>
+        
         <h1 class="saguaroTitle">Saguaro Chamber</h1>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -43,13 +51,8 @@
         </div>
         <div class="callToAction">
             <h2 class="actionWelcome">Welcome to Pheonix.</h2>
-            <img src="images/wdd230-org.jpg" 
-            class="heroImg" 
-            sizes="50vw"
-            alt="Hero Picture"
-            srcset="images/wdd 500w,
-                    images/wdd230OrgLarge.jpg 800w"
-            >
+            <img src="images/wdd230OrgLarge.jpg" sizes="50vw" alt="Hero Picture">
+            
             <p class="actionJoin">Join the Chamber</p>
         </div>
         <div class="weather">
@@ -70,7 +73,15 @@
         <div class="spotlight">
             <div class="bugDiv">
                 <h2>Joe's Bugs Removal</h2>
-                <img src="images/bug.png" class="bugImg" alt="Joe's Bugs Removal Logo">
+                <figure class="bugImg">
+                    <img src="images/bug.png" alt="Joe's Bugs Removal Logo"
+                    sizes="70vw"
+                    srcset="images/bugImgSmall.jpg 200w,
+                            images/bugImgMedium.jpg 500w,
+                            images/bugImgLarge.jpg 800w"
+                            >
+                </figure>
+                
                 <p>joesbugs@gmail.com</p>
                 <p>(480) 347-5784</p>
                 <p>Website</p>
