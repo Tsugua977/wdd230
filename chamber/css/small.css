@@ -139,6 +139,14 @@ nav ul.open {
     align-self: center;
 }
 
+header a figure.twitter img {
+    margin: 0 0 0 -50px;
+}
+
+header a figure.facebook img {
+    margin: 0 0 0 -25px;
+}
+
 main {
     display: grid;
     grid-template-columns: auto;
@@ -164,9 +172,8 @@ div {
     grid-row: 1/2;
     height: 200px;
     position: relative;
-    background-image: url(images/wdd230OrgSmall.jpg);
-    background-size: cover;
     overflow: hidden;
+
 }
 
 .actionWelcome {
@@ -178,9 +185,7 @@ div {
 }
 
 .heroImg {
-    object-fit: contain;
-    margin: auto;
-    display: block;
+    padding: 0;
 }
 
 .actionJoin {
@@ -246,12 +251,8 @@ div {
     float: left;
 }
 
-main figure.bugImg img {
-    
-}
-
 .gardenDiv {
-    margin: 5px 0px;
+    margin: 5px 0px 0px 10px;
     width: 205px;
     height: 310px;
     float: left;
