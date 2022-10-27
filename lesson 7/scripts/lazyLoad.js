@@ -1,4 +1,10 @@
 const images = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+    rootMargin: "0px 0px 50px 0px",
+    threshold: 1
+};
+
 const loadImages = (image) => {
     image.setAttribute("src", image.getAttribute("data-src"));
     image.onLoad = () => {
@@ -18,7 +24,7 @@ if ("IntersectionObserver" in window) {
                 observer.unobserve(item.target);
             }
         });
-    });
+    }, imgOptions);
     
     images.forEach((img) => {
         observer.observe(img);
