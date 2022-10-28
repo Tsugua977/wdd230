@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <picture class="saguaroLogo">
+        <source media="(max-width:500px)" srcset="images/saguaroLogoSmall.webp">
+        <source media="(max-width:700px)" srcset="images/saguaroLogoMedium.webp">
+        <source media="(max-width:1600px)" srcset="images/saguaroLogoLarge.webp">
+        <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo">
+    </picture>
+    
+    <h1 class="saguaroTitle">Saguaro Chamber</h1>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li> 
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    <div class="fullDate"></div>
+    <a href="https://www.facebook.com/" class="facebook">
+        <figure class="facebook">
+            <img src="images/facebookLogo.png" alt="Facebook Logo"
+            sizes="3vw"
+            srcset="images/facebookLogoSmall.png 200w,
+                    images/facebookLogoMedium.png 500w,
+                    images/facebookLogoLarge.png 800w"
+                    >
+        </figure>
+    </a>
+    <a href="https://twitter.com/?lang=en" class="twitter">
+        <figure class="twitter">
+            <img src="images/twitterLogo.png" alt="Twitter Logo"
+                sizes="3vw"
+                srcset="images/twitterLogoSmall.png 200w,
+                        images/twitterLogoMedium.png 500w,
+                        images/twitterLogoLarge.png 800w"
+                        >
+        </figure>
+    </a>
+</header>
+
+<body>
+    <main class="discoverMain">
+        <div class="population">
+            <picture class="populationPic">
+                <source media="(max-width:500px)" srcset="images/placeholder2Small.jpg">
+                <source media="(max-width:700px)" srcset="images/placeholder2Medium.jpg">
+                <source media="(max-width:1600px)" srcset="images/placeholder2Large.jpg">
+                <img src="images/placeholder2.png" alt="">
+            </picture>
+            <p>Pheniox, AZ has a population of 1.66 million people. The population is increasing at a 1.56%/per year. Business opprotunities pop up as more people coming in!</p>
+        </div>
+        <div class="medianAge">
+            <picture class="">
+                <source media="(max-width:500px)" srcset="">
+                <source media="(max-width:700px)" srcset="">
+                <source media="(max-width:1600px)" srcset="">
+                <img src="" alt="">
+            </picture>
+            <p>The average age of Arizona residences is around 30. Plan accordingly when figuring out a target audiance for your business.</p>
+        </div>
+        <div class="employment">
+            <picture class="">
+                <source media="(max-width:500px)" srcset="">
+                <source media="(max-width:700px)" srcset="">
+                <source media="(max-width:1600px)" srcset="">
+                <img src="" alt="">
+            </picture>
+            <p>There are 145 million people employed in Arizona. Get your business out there now, as many people are still searching for jobs.</p>
+        </div>
+        <div class="occupations">
+            <picture class="">
+                <source media="(max-width:500px)" srcset="">
+                <source media="(max-width:700px)" srcset="">
+                <source media="(max-width:1600px)" srcset="">
+                <img src="" alt="">
+            </picture>
+            <p>There are 823k employees in Pheniox. Most of them are either employeed in office and administrative support, sales occupations, and management positions. </p>
+        </div>
+        <div class="industries">
+            <picture class="">
+                <source media="(max-width:500px)" srcset="">
+                <source media="(max-width:700px)" srcset="">
+                <source media="(max-width:1600px)" srcset="">
+                <img src="" alt="">
+            </picture>
+            <p>The most common emplyment sectors in Pheniox are health care and social assistance, retail, and accommodation and food services.</p>
+        </div>
+    </main>
+</body>
+
+<footer id="footer">
+    <picture class="saguaroLogoFooter">
+        <source media="(max-width:500px)" srcset="images/logoFooterSmall.webp">
+        <source media="(max-width:700px)" srcset="images/logoFooterMedium.webp">
+        <source media="(max-width:1600px)" srcset="images/logoFooterLarge.webp">
+        <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo">
+    </picture>
+    <p class="nameFooter">Saguaro Chamber</p>
+    <p class="addressFooter">13220 Cactus Rd, <br>Phenoix, AZ, 85003</p>
+    <p class="emailFooter">saguaro@gmail.com</p>
+    <p class="phoneFooter">(480) 867-5309</p>
+    <p class="locationFooter">Location Map</p>
+    <p class="creatorInfo">@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ | Last Updated: <const id="lastUpdate"></const></p>
+</footer>
+<script src="scripts/getDate.js"></script>
+<script src="scripts/hamburgerButton.js"></script>
+
+</html>
