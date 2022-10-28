@@ -1,8 +1,8 @@
-img[data-src] {
+body img[data-src] {
     filter: blur(0.2em);
 }
 
-img {
+body img {
     width: 300px;
     height: 400px;
 
@@ -13,7 +13,6 @@ img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
-
 
 h1 {
     text-align: center;

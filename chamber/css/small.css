@@ -158,6 +158,7 @@ main {
 div {
     background-color: rgb(255, 255, 255);
     border: 4px solid rgb(229, 229, 229);
+    text-align: center;
 }
 
 .event {
@@ -315,4 +316,11 @@ div {
     padding-top: 5px;
     color: white;
     font-size: 12px;
+}
+
+
+
+.populationPic {
+    width: 100%;
+    height: 100%;
 }
