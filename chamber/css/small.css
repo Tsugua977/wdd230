@@ -20,6 +20,7 @@ h2 {
 p {
     font-size: 14px;
     font-family: 'Roboto', serif, sans-serif;
+    margin: 10px;
 }
 
 .meetingBanner {
@@ -318,9 +319,54 @@ div {
     font-size: 12px;
 }
 
+/*Discover Page*/
 
+.discoverMain {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, 260px) 70px;
+    grid-gap: 1em;
+    margin: 10px 60px;
+}
 
-.populationPic {
+.population {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.medianAge {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.employment {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+
+.occupations {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.industries {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.discoveryImgs {
     width: 100%;
-    height: 100%;
+}
+
+.visits {
+    grid-column: 1/2;
+    grid-row: 6/7;
+
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    margin: 10px;
 }
