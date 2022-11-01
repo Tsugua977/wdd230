@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table thead tr td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+table tbody tr td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgb(232, 232, 232);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(232, 232, 232);
+}
