@@ -30,7 +30,7 @@
         align-self: center;
     }
     
-    main {
+    main.indexMain {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: repeat(6, auto);
@@ -198,5 +198,14 @@
         grid-row: 4/5;
         
         font-size: 19px;
+    }
+
+    /*Join Page*/
+    form fieldset {
+        width: 600px;
+    }
+
+    form legend {
+        font-size: 24px;
     }
 }
