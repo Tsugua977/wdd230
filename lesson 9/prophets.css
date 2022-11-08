@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-family:'Alegreya', serif, sans-serif;
+}
+
+p {
+    font-family: 'Roboto', serif, sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));    
+    grid-gap: 1em;
+    
+}
+
+section {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 30px rgb(104, 104, 104);
+}
+
+footer {
+    text-align: center;
+    margin: 15px;
+}
