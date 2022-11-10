@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Farm Box",
+        "address": "2501 E Broadway St Pheonix Arizona 85002",
+        "phoneNum": "(501) 764-1886",
+        "website": "https://www.farmbox.com/",
+        "image": "images/logoFarmBox.png",
+        "membershipLevel": "0"
+      },
+      {
+        "name": "Game Boom",
+        "address": "2104 Harkrider St, Pheonix, AZ, 71655",
+        "phoneNum": "(870) 367-8466",
+        "website": "images/logoGameBoom.png",
+        "image": "https://www.gameboom.com/",
+        "membershipLevel": "2"
+      },
+      {
+        "name": "Handmade Home",
+        "address": "1 Spring St, Pheonix, AZ, 72631",
+        "phoneNum": "(479) 253-6596",
+        "website": "https://www.handmadhome.com/",
+        "image": "images/logoHandmadeHome.png",
+        "membershipLevel": "1"
+      },
+      {
+        "name": "Ori Tech",
+        "address": "3204 E Race Ave, Pheonix, AZ, 72143",
+        "phoneNum": "(501) 268-0654",
+        "website": "https://www.oritech.com/",
+        "image": "images/logoOriTech.png",
+        "membershipLevel": "0"
+      },
+      {
+        "name": "Perfect Records",
+        "address": "802 E 9th St, Pheonix, AZ, 72461",
+        "phoneNum": "(870) 595-2589",
+        "website": "https://www.perfectrecords.com/",
+        "image": "images/logoPerfectRecords.png",
+        "membershipLevel": "3"
+      },
+      {
+        "name": "Pet Path",
+        "address": "500 W Main St, Pheonix, AZ, 72933",
+        "phoneNum": "(479) 965-7523",
+        "website": "https://www.petpath.com/",
+        "image": "images/logoPetPath.png",
+        "membershipLevel": "2"
+      },
+      {
+        "name": "Rebarn",
+        "address": "706 W Trimble Ave, Pheonix, AZ, 72616",
+        "phoneNum": "(870) 423-3303",
+        "website": "https://www.rebarn.com/",
+        "image": "images/logoRebarn.png",
+        "membershipLevel": "3"
+      },
+      {
+        "name": "Table of Contents",
+        "address": "6420 Colonel Glenn Rd, Pheonix, AZ, 72204",
+        "phoneNum": "(501) 565-0126",
+        "website": "https://www.tableofcontents.com/",
+        "image": "images/logoTableOfContents.png",
+        "membershipLevel": "2"
+      },
+      {
+        "name": "Techara",
+        "address": "1112 N Washington St, Pheonix, AZ, 72335",
+        "phoneNum": "(870) 633-1234",
+        "website": "https://www.techara.com/",
+        "image": "images/logoTechara.png",
+        "membershipLevel": "4"
+      }
+    ]
+  }
