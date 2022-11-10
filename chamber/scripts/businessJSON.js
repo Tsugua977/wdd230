@@ -30,9 +30,9 @@ function displayProphets(businesses) {
     logo.setAttribute('loading', 'lazy');
     
     busAddress.textContent = `\ ${businesses.address}`;
-    busPhoneNum.textContent = `\ Place of Birth: ${businesses.phoneNum}`;
-    busWebsite.textContent = `\ Birthday: ${businesses.website}`;
-    busMembershipLevel.textContent = `\ Place of Birth: ${businesses.membershipLevel}`;
+    busPhoneNum.textContent = `\ ${businesses.phoneNum}`;
+    busWebsite.textContent = `\ ${businesses.website}`;
+    busMembershipLevel.textContent = `\ Membership Level: ${businesses.membershipLevel}`;
 
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);

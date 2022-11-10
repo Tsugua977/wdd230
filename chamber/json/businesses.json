@@ -12,8 +12,8 @@
         "name": "Game Boom",
         "address": "2104 Harkrider St, Pheonix, AZ, 71655",
         "phoneNum": "(870) 367-8466",
-        "website": "images/logoGameBoom.png",
-        "image": "https://www.gameboom.com/",
+        "website": "https://www.gameboom.com/",
+        "image": "images/logoGameBoom.png",
         "membershipLevel": "2"
       },
       {
