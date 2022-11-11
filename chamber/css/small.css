@@ -458,3 +458,63 @@ form label.applicant input:required:valid {
 .todayDate {
     visibility: hidden;
 }
+
+/*Directory Page*/
+main.directoryMain {
+    margin-left: 100px;
+    margin-right: 100px;
+    min-width: 400px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));    
+    grid-gap: 1em;
+    background-color: none;
+    border: none;
+    margin: 10px 0 40px 0;
+}
+
+.grid section {
+    margin: 20px;
+    border: 4px solid rgb(229, 229, 229);
+}
+
+.grid section img.logoImgs {
+    width: auto;
+    max-width: 325px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 0 30px rgb(104, 104, 104);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: left;
+    border: 4px solid rgb(229, 229, 229);
+    margin: 10px 10px;
+}
+
+.list img.logoImgs {
+    width: auto;
+    max-width: 325px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 0 0 30px rgb(104, 104, 104);
+    display: none;
+}
+
+.list section h2 {
+    margin: 10px 0 10px 10px;
+}
+
+.list section p {
+    margin: auto 20px;
+}
