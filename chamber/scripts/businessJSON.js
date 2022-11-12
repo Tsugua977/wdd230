@@ -1,4 +1,4 @@
-const requestURL = 'json/businesses.json';
+const requestURL = 'json/data.json';
 const cards = document.querySelector('.grid');
 
 fetch(requestURL)

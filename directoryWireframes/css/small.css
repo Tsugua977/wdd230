@@ -1,0 +1,67 @@
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    margin-bottom: 15px;
+}
+
+.gridTitle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.listTitle {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.gridNav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.listNav {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    float: left;
+    margin: 5px;
+    background-color: grey;
+}
+
+a {
+    display: block;
+    margin: 5px;
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid grey;
+}
+
+footer {
+    text-align: center;
+}
+
+nav ul li.active {
+    background-color: rgba(115, 115, 115, 0.5);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
