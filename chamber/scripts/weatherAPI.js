@@ -35,7 +35,7 @@ function displayResults(weatherData) {
     icon.setAttribute("src", iconSrc);
     icon.setAttribute("alt", descr);
     weatherDescr.textContent = descr;
-    windSp.textContent = `Wind Chill: ${windSpeed}`;
+    windSp.textContent = `Wind Chill: ${windSpeed} km/h`;
 
     if (temp < 50 & windSpeed > 3) {
         let fahrenheit = 35.74 + 0.6215 * temp - 35.75 * windSpeed ** 0.16 + 0.4275 * temp * windSpeed ** 0.16;
