@@ -207,10 +207,60 @@ div {
     grid-row: 3/4;
     height: 200px;
     text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+
 }
 
-.weatherTitle {
+#weatherTitle {
     margin-top: 5px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#weatherIcon {
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    width: 100%;
+    height: 80px;
+    min-width: 40px;
+    max-width: 80px;
+
+    justify-self: center;
+
+    background-color: rgb(229, 229, 229);
+    border: solid 2px rgb(186, 186, 186);
+}
+
+#temp {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: solid 3px rgb(229, 229, 229);
+}
+
+#weatherType {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 5px;
+    border-bottom: solid 3px rgb(229, 229, 229);
+}
+
+#windSpeed {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin: 5px;
+}
+
+#windchill {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin: 5px;
 }
 
 .news {
