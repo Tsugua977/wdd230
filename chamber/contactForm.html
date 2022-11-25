@@ -32,9 +32,9 @@
             <ul id="primaryNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li> 
-                <li><a href="contactForm.html">Contact</a></li>    
+                <li class="active"><a href="contactForm.html">Contact</a></li>    
             </ul>
         </nav>
         <div class="fullDate"></div>
@@ -60,12 +60,37 @@
         </a>
     </header>
 
-    <main class="directoryMain"> 
-        <div class="btnDiv">
-            <button class="gridBtn">Grid</button>
-            <button class="listBtn">List</button>
-        </div>
-        <div class="grid"></div>
+    <main class="contactMain"> 
+        <h1>Contact Us</h1>
+        <h2>Saguaro Chamber of Commerce</h2>
+        <p class="underlineBottom">Address</p>
+        <p class="contactPar">13220 Cactus Rd, Phenoix, AZ, 85003</p>
+        <p class="underlineBottom">Email</p>
+        <p class="contactPar">saguaro@gmail.com</p>
+        <p class="underlineBottom">Phone Number</p>
+        <p class="contactPar">(480) 867-5309</p>
+
+        <h1 class="formHeader">Get In Contact</h1>
+        
+        <form method="get" action="contactThankYou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <p>First Name*</p>
+                <label class="applicant"><input type="text" name="fname" placeholder="" required></label>
+                <p>Last Name*</p>
+                <label class="applicant"><input type="text" name="lname" placeholder="" required></label>
+                <p>Email*</p>
+                <label class="applicant"><input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <p>Are You a Chamber Member*</p>
+                <label class="membership"><input type="radio" name="member" value="yes" required> Yes</label>
+                <label class="membership"><input type="radio" name="member" value="no" required> No</label>
+                <label class="membership"><input type="radio" name="member" value="notSure" required> Not Sure</label>
+                <p>Business Description</p>
+                <label class="busiDescription"><textarea name="businessDescr"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Get In Contact" class="submitBtn">
+        </form>
     </main>
 </body>
 
@@ -85,6 +110,4 @@
 </footer>
 <script src="scripts/getDate.js"></script>
 <script src="scripts/hamburgerButton.js"></script>
-<script src="scripts/businessJSON.js"></script>
-<script src="scripts/directoryButtons.js"></script>
 </html>

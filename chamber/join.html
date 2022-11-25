@@ -34,7 +34,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li class="active"><a href="join.html">Join</a></li> 
-                <li><a href="#">Contact</a></li>    
+                <li><a href="contactForm.html">Contact</a></li>    
             </ul>
         </nav>
         <div class="fullDate"></div>
@@ -61,22 +61,29 @@
     </header>
 
     <main class="joinMain"> 
-        <h1>Join Saguaro Chamber</h1>
+        <h1 class="formHeader">Join Saguaro Chamber</h1>
         
         <form method="get" action="thankYou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label class="applicant">First Name*<input type="text" name="fname" required></label>
-                <label class="applicant">Last Name*<input type="text" name="lname" required></label>
-                <label class="applicant">Phone*<input type="tel" name="phone" placeholder="4803872465" required></label>
-                <label class="applicant">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="applicant">Business Title<input  pattern="[a-zA-Z0-9-]{7,1000}" type="text" name="business" title="Can only contain letters, numbers, and hyphens, and more than seven characters." placeholder="More than Seven Characters"></label>
+                <p>First Name*</p>
+                <label class="applicant"><input type="text" name="fname" required></label>
+                <p>Last Name*</p>
+                <label class="applicant"><input type="text" name="lname" required></label>
+                <p>Phone*</p>
+                <label class="applicant"><input type="tel" name="phone" placeholder="4803872465" required></label>
+                <p>Email*</p>
+                <label class="applicant"><input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <p>Business Title</p>
+                <label class="applicant"><input  pattern="[a-zA-Z0-9-]{7,1000}" type="text" name="business" title="Can only contain letters, numbers, and hyphens, and more than seven characters." placeholder="More than Seven Characters"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Business Information</legend>
-                <label class="applicant">Business Name*<input type="text" name="businessName" required></label>
-                <label class="busiDescription">Business Description<textarea name="businessDescr"></textarea></label>
+                <p>Business Name*</p>
+                <label class="applicant"><input type="text" name="businessName" required></label>
+                <p>Business Description</p>
+                <label class="busiDescription"><textarea name="businessDescr"></textarea></label>
             </fieldset>
 
             <fieldset>

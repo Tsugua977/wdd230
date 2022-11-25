@@ -1,4 +1,20 @@
-@media (min-width: 1010px) {
+@media screen and (min-width: 75em) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #temp {
+        font-size: 30px;
+    }
 
     nav button {
         display: none;
@@ -111,9 +127,18 @@
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
-        height: 200px;
+        margin: 0;
     }
     
+    #weatherIcon {
+        width: 75px;
+        height: 75px;
+    }
+
+    #windSpeed{
+        padding: 5px 0 0 0;
+    }
+
     .news {
         grid-column: 2/4;
         grid-row: 3/4;
@@ -126,6 +151,10 @@
         height: 200px;
     }
     
+    .joinHeader{
+        margin: 10px 50px; 
+    }
+
     .spotlight {
         grid-column: 4/5;
         grid-row: 1/4;
