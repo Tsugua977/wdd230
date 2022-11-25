@@ -1,9 +1,6 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 body {
     background-color: #ffa64c;
 }
@@ -32,8 +29,8 @@ p {
 
 header{
     display: grid;
-    grid-template-columns: auto auto 40px 40px;
-    grid-template-rows: auto auto 50px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-gap: 1em;
     padding: 20px;
 }
@@ -109,6 +106,7 @@ nav ul.open {
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: end;
+    align-self: center;
 }
 
 .saguaroTitle {
@@ -120,7 +118,7 @@ nav ul.open {
     font-size: 48px;
 }
 
-.fullDate {
+div.fullDate {
     grid-column: 1/6;
     grid-row: 3/4;
     font-size: 32px;
@@ -206,7 +204,7 @@ div {
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
-    margin: 0 150px;
+    margin: 0 50px;
 
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -242,6 +240,7 @@ div {
     margin: 5px;
     font-weight: bold;
     font-size: 50px;
+    align-self: center;
 }
 
 #weatherType {
@@ -256,7 +255,7 @@ div {
 #windSpeed {
     grid-column: 1/3;
     grid-row: 4/5;
-    margin: 15px 5px 5px 5px;
+    padding: 10px 0 0 0;
 
     border-top: solid 3px rgb(153, 153, 153);
 }
@@ -365,7 +364,7 @@ div {
 .discoverMain {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(5, 260px) 70px;
+    grid-template-rows: repeat(6, auto);
     grid-gap: 1em;
     margin: 10px 60px;
 }
@@ -423,10 +422,16 @@ main.joinMain h1 {
     text-align: center;
 }
 
+.formHeader{
+    color: white;
+    text-align: center;
+}
+
 form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
+    margin: 20px 40px;
 }
 
 form fieldset {
@@ -437,13 +442,23 @@ form fieldset {
     width: 500px;
 }
 
-form legend {
+form fieldset legend {
     margin: 0 0 0 15px;
     padding: 5px;
     font-weight: bolder;
-    font-size: 20px;
     background-color: rgb(255, 255, 255);
     border: 4px solid rgb(229, 229, 229);
+    font-size: 36px;
+}
+
+form label {
+    display: block;
+    width: 100%;
+}
+
+form label input {
+    padding: 0.5rem 0.75rem;
+    
 }
 
 form label.applicant, form div {
@@ -453,22 +468,26 @@ form label.applicant, form div {
 
 }
 
+form label.applicant input {
+    width: 100%;
+}
+
 form label.applicant input, form label.applicant select {
     display: block;
-    font-size: 16px;
+    font-size: 32px;
     border: solid 1px #999;
     border-radius: 4px;
-    padding: .75rem;
+    padding: 1.5rem 0;
     color: #555;
     width: 100%;
-    max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.busiDescription textarea{
     width: 100%;
+    padding: 1.5rem 0;
+    font-size: 32px;
 }
-
 
 form label.membership {
     display: block;
@@ -483,17 +502,34 @@ form input.submitBtn {
     padding: .75rem;
     margin: 10px;
     width: 96%;
+    height: 100px;
     max-width: 20rem;
     justify-self: center;
-    
+    font-size: 32px;
 }
 
 form label.applicant input:required {
-    border: red solid 2px
+    border: red solid 2px;
+    font-size: 16;
 }
 
 form label.applicant input:required:valid {
     border: green solid 2px
+}
+
+form label.membership {
+    font-size: 32px;
+}
+
+form label.membership input[type="radio"] {
+    transform: scale(1.5);
+}
+
+.joinMain form p {
+    font-size: 32px;
+    margin: 15px 0;
+    color: black;
+    text-align: left;
 }
 
 .todayDate {
@@ -576,4 +612,35 @@ main.directoryMain {
 
 .list section p {
     margin: auto 20px;
+}
+
+/*Contact Page*/
+
+.contactMain h1 {
+    text-align: center;
+    color: white;
+}
+
+.contactMain h2 {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+.contactMain p {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.underlineBottom {
+    margin: 30px 10px 15px 10px;
+    text-decoration: underline;
+}
+
+.contactMain form p {
+    font-size: 32px;
+    margin: 15px 0;
+    color: black;
+    text-align: left;
 }
