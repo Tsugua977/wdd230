@@ -180,24 +180,29 @@ div {
     position: absolute;
     top: 5px;
     left: 32px;
-    color: black;
-    font-size: 28px;
+    color: white;
+    font-size: 32px;
 }
 
-.heroImg {
+.heroImg img {
     width: 100%;
+    height: 100%;
 }
+
 
 .actionJoin {
     position: absolute;
-    top: 100px;
-    left: 250px;
+    top: 320px;
+    left: 320px;
     font-size: 24px;
     background-color: #69cdf2;
     color: white;
     padding: 10px 25px;
     font-family: 'Oswald', serif, sans-serif;
-    padding: 10px;
+}
+
+.actionJoin:hover {
+    background-color: #6daec6;;
 }
 
 .weather {
@@ -282,12 +287,18 @@ div {
     text-align: center;
 }
 
-.joinHeader {
+.joinHeader button {
     background-color: #69cdf2;
     color: white;
-    margin: 20px 200px 30px 200px;
-    padding: 10px;
+    margin: 10px 0 10px 0;
+    padding: 10px 60px;
     font-family: 'Oswald', serif, sans-serif;
+    font-size: 32px;
+    border: #69cdf2;
+}
+
+.joinHeader button:hover {
+    background-color: #6daec6;
 }
 
 .spotlight {
@@ -463,7 +474,7 @@ form label input {
 
 form label.applicant, form div {
     display: block;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-size: 16px;
 
 }
@@ -581,6 +592,26 @@ main.directoryMain {
     height: 200px;
     margin: 10px;
     box-shadow: 0 0 30px rgb(104, 104, 104);
+}
+
+.grid section {
+    overflow: hidden;
+}
+
+section img.logoImgs {
+    width: auto;
+    height: 300px;
+    margin: 5px;
+}
+
+section h2 {
+    margin: 20px 0;
+}
+
+section {
+    border: 4px solid rgb(162, 162, 162);
+    box-shadow: 0 0 30px rgb(104, 104, 104);
+    margin: 10px;
 }
 
 .list {

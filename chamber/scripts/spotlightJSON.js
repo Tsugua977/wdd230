@@ -1,18 +1,35 @@
+
 const requestURL = 'json/data.json';
-const cards = document.querySelector('.grid');
 
 fetch(requestURL)
-    .then(function (response) {
+    .then(function(response) {
         return response.json();
     })
     .then(function(jsonObject){
         console.table(jsonObject);
-        const businesses = jsonObject['businesses'];
-        businesses.forEach(displayBusinesses);
-    });
+        const businesses = jsonObject["businesses"];
+        const tierBusinesses = [];
+        for (const business of businesses)
+            if (business.membershipLevel >= 3) {
+                tierBusinesses.push(business);
+            console.log(tierBusinesses);}
+        
+        var firstRan = Math.floor(Math.random() * tierBusinesses.length);
+        var secondRan = Math.floor(Math.random() * tierBusinesses.length);
+        while (firstRan == secondRan) {
+            secondRan = Math.floor(Math.random() * tierBusinesses.length);
+        }
+        
+        const firstBusiness = tierBusinesses[firstRan];
+        const secondBusiness = tierBusinesses[secondRan];
+
+        displayBusinesses(firstBusiness);
+        displayBusinesses(secondBusiness);
+});
+
+
 
 function displayBusinesses(businesses) {
-    // Create elements to add to the document
     let card = document.createElement('section');
     let logo = document.createElement('img');
     let h2 = document.createElement('h2');
@@ -20,11 +37,9 @@ function displayBusinesses(businesses) {
     let busPhoneNum = document.createElement('p');
     let busWebsite = document.createElement('p');
     let busMembershipLevel = document.createElement('p');
-    
-    // Change the textContent property of the h2 element to contain the prophet's full name
+
     h2.textContent = `\ ${businesses.name}`;
-    
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+
     logo.setAttribute('src', businesses.image);
     logo.setAttribute('alt', `\ Logo of ${businesses.name}`);
     logo.setAttribute('class', 'logoImgs')
@@ -35,14 +50,11 @@ function displayBusinesses(businesses) {
     busWebsite.textContent = `\ ${businesses.website}`;
     busMembershipLevel.textContent = `\ Membership Level: ${businesses.membershipLevel}`;
 
-    // Add/append the section(card) with the h2 element
-    card.appendChild(logo);
     card.appendChild(h2);
+    card.appendChild(logo);
     card.appendChild(busAddress);
     card.appendChild(busPhoneNum);
     card.appendChild(busWebsite);
-    card.appendChild(busMembershipLevel);
 
-    // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.grid').appendChild(card);
+    document.querySelector('.spotlight').appendChild(card);
 }

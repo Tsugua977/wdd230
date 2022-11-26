@@ -1,4 +1,4 @@
-@media screen and (min-width: 75em) {
+@media only screen and (min-width: 1000px) {
 
     h1 {
         font-size: 32px;
@@ -33,8 +33,8 @@
 
     header{
         display: grid;
-        grid-template-columns: auto auto auto 40px 40px;
-        grid-template-rows: auto 50px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
         grid-gap: 1em;
         padding: 20px;
     }
@@ -65,15 +65,12 @@
         grid-column: 1/6;
         grid-row: 2/3;
         font-size: 18px;
-        text-align: center;
         padding-top: 10px;
     }
     
     .facebook {
         grid-column: 4/5;
         grid-row: 1/2;
-        align-self: center;
-        margin: 0 0 0 0;
     }
     
     .twitter {
@@ -84,11 +81,10 @@
     
     main.indexMain {
         display: grid;
-        grid-template-columns: 350px 310px 310px 350px;
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(3, auto);
         grid-gap: 1em;
-        margin: 20px 0px 20px 35px;
-        padding: 0 0 0 40px;
+        margin: 20px;
     }
     
     .event {
@@ -112,12 +108,13 @@
 
     main figure.heroImg img{
         display: flex;
-        margin: 15px 0 0 20px;
+        width: 100%;
+        height: 100%;
     }
 
     .actionJoin {
         position: absolute;
-        top: 300px;
+        top: 400px;
         left: 400px;
         font-size: 24px;
         padding: 15px;
@@ -159,6 +156,10 @@
         grid-column: 4/5;
         grid-row: 1/4;
         height: auto;
+    }
+
+    section img.logoImgs {
+        height: 180px; 
     }
 
     .bugDiv {
@@ -226,5 +227,42 @@
     form legend {
         font-size: 24px;
     }
+
+    form fieldset legend {
+        font-size: 16px;
+    }
+
+    form label.applicant input, form label.applicant select {
+        font-size: 16px;
+        padding: 0.5rem 0;
+    }
+
+    form label.membership {
+        font-size: 16px;
+    }
+
+    form label.membership input[type="radio"] {
+        transform: scale(0.85);
+    }
+
+    form input.submitBtn {
+        padding: .25rem;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    /*Contact Page*/
+    .contactMain h2 {
+        font-size: 24px;
+    }
+
+    .contactMain p {
+        font-size: 16px;
+    }
+
+    .contactMain form p {
+        font-size: 16px;
+    }
+
 }
 

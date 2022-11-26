@@ -1,11 +1,11 @@
-@media screen and (min-width: 65.5em){
+@media only screen and (min-width: 600px){
 
     h2 {
         font-size: 22px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 24px;
     }
     
     .saguaroTitle {
@@ -20,8 +20,6 @@
     .facebook {
         grid-column: 4/5;
         grid-row: 1/2;
-        align-self: center;
-        margin: 0 0 0 0;
     }
     
     .twitter {
@@ -49,11 +47,10 @@
     
     .actionJoin {
         position: absolute;
-        top: 100px;
+        top: 220px;
         left: 130px;
         font-size: 24px;
-        padding: 15px;
-        padding: 10px 25px;
+        padding: 15px 25px;
     }
 
     .weather {
@@ -77,12 +74,16 @@
         grid-column: 1/3;
         grid-row: 5/6;
     }
-    
+
+    .joinHeader button {
+        font-size: 28px;
+    }
+
     .spotlight {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-    
+
     .gardenImg {
         width: 60px;
     }
@@ -148,7 +149,7 @@
     .discoverMain {
         display: grid;
         grid-template-columns: repeat(5, auto);
-        grid-template-rows: repeat(3, 320px) 70px;
+        grid-template-rows: repeat(4, auto);
     }
 
     .population {
@@ -199,6 +200,29 @@
         font-size: 24px;
     }
 
+    form fieldset legend {
+        font-size: 24px;
+    }
+
+    form label.applicant input, form label.applicant select {
+        font-size: 24px;
+        padding: 1rem 0;
+    }
+
+    form label.membership {
+        font-size: 24px;
+    }
+
+    form label.membership input[type="radio"] {
+        transform: scale(1);
+    }
+
+    form input.submitBtn {
+        padding: .50rem;
+        height: 65px;
+        font-size: 24px;
+    }
+
     /*Contact Page*/
     .contactMain h2 {
         font-size: 32px;
@@ -210,5 +234,10 @@
 
     .contactMain form p {
         font-size: 26px;
+    }
+
+    .contactMain form p {
+        font-size: 24px;
+        margin: 10px 0;
     }
 }
