@@ -91,53 +91,26 @@
         width: 60px;
     }
 
-    footer {
-        display: grid;
-        grid-template-columns: auto 180px auto;
-        grid-template-rows: auto auto auto auto;
-    }
-    
-    .saguaroLogoFooter {
-        grid-column: 1/2;
-        grid-row: 1/3;
-        justify-self: end;
-        margin: 0 0 0 0;
-        width: 150px;
-    }
-    
     .nameFooter {
-        grid-column: 2/3;
-        grid-row: 1/2;
         font-size: 24px;
-        font-size: 16px;
-        align-self: end;
+        
     }
     
     .addressFooter{
-        grid-column: 2/3;
-        grid-row: 2/3;
         font-size: 16px;
     }
     
     .emailFooter {
-        grid-column: 3/4;
-        grid-row: 2/3;
         font-size: 16px;
-        justify-self: start;
-        margin: 1px 0 0 0;
     }
     
     .phoneFooter {
-        grid-column: 3/4;
-        grid-row: 1/2;
         font-size: 16px;
         justify-self: start;
-        margin-left: 16px;
+        
     }
     
     .locationFooter {
-        grid-column: 2/3;
-        grid-row: 3/4;
         font-size: 16px;
     }
     
@@ -218,6 +191,10 @@
 
     form label.membership input[type="radio"] {
         transform: scale(1);
+    }
+
+    form label.busiDescription textarea{
+        font-size: 24px;
     }
 
     form input.submitBtn {
