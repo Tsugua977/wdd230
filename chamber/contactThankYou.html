@@ -19,48 +19,49 @@
 <body>
     <div id="meetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
-        <picture class="saguaroLogo">
-            <source media="(max-width:500px)" srcset="images/saguaroLogoSmall.webp">
-            <source media="(max-width:700px)" srcset="images/saguaroLogoMedium.webp">
-            <source media="(max-width:1600px)" srcset="images/saguaroLogoLarge.webp">
-            <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo">
-        </picture>
-        
+        <a href="index.html" class="saguaroLogo">
+            <picture >
+                <source media="(max-width:600px)" srcset="images/saguaroLogoSmall.webp">
+                <source media="(max-width:850px)" srcset="images/saguaroLogoMedium.webp">
+                <source media="(min-width:851px)" srcset="images/saguaroLogoLarge.webp">
+                <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
+            </picture>
+        </a>
         <h1 class="saguaroTitle">Saguaro Chamber</h1>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li> 
-                <li class="active"><a href="contactForm.html">Contact</a></li>    
+                <li><a href="contactForm.html">Contact</a></li>    
             </ul>
         </nav>
         <div class="fullDate"></div>
         <a href="https://www.facebook.com/" class="facebook">
             <figure class="facebook">
-                <img src="images/facebookLogo.png" alt="Facebook Logo"
-                sizes="3vw"
-                srcset="images/facebookLogoSmall.png 200w,
-                        images/facebookLogoMedium.png 500w,
-                        images/facebookLogoLarge.png 800w"
+                <img src="images/facebookLogo.jpg" alt="Facebook Logo" sizes="3vw" loading="lazy"
+                srcset="images/facebookLogoSmall.png 150w,
+                        images/facebookLogoMedium.png 450w,
+                        images/facebookLogoLarge.png 750w"
                         >
             </figure>
         </a>
         <a href="https://twitter.com/?lang=en" class="twitter">
             <figure class="twitter">
-                <img src="images/twitterLogo.png" alt="Twitter Logo"
-                    sizes="3vw"
-                    srcset="images/twitterLogoSmall.png 200w,
-                            images/twitterLogoMedium.png 500w,
-                            images/twitterLogoLarge.png 800w"
+                <img src="images/twitterLogo.png" alt="Twitter Logo" sizes="3vw" loading="lazy"
+                    srcset="images/twitterLogoSmall.png 150w,
+                            images/twitterLogoMedium.png 450w,
+                            images/twitterLogoLarge.png 750w"
                             >
             </figure>
         </a>
     </header>
 
     <main class="contactMain">
+        <h1>Thank you for reaching out!<br>We will get back to you soon!</h1>
+
         <h1>Contact Us</h1>
         <h2>Saguaro Chamber of Commerce</h2>
         <p>Address</p>
@@ -69,8 +70,6 @@
         <p>saguaro@gmail.com</p>
         <p>Phone Number</p>
         <p>(480) 867-5309</p>
-
-        <h1 class="thank you">Thank you for reaching out!<br>We will get back to you soon!</h1>
     </main>
 </body>
 
@@ -79,7 +78,7 @@
         <source media="(max-width:500px)" srcset="images/logoFooterSmall.webp">
         <source media="(max-width:700px)" srcset="images/logoFooterMedium.webp">
         <source media="(max-width:1600px)" srcset="images/logoFooterLarge.webp">
-        <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo">
+        <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
     </picture>
     <p class="nameFooter">Saguaro Chamber</p>
     <p class="addressFooter">13220 Cactus Rd, <br>Phenoix, AZ, 85003</p>
@@ -90,5 +89,4 @@
 </footer>
 <script src="scripts/getDate.js"></script>
 <script src="scripts/hamburgerButton.js"></script>
-<script src="scripts/windchill.js"></script>
 </html>

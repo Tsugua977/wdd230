@@ -19,12 +19,14 @@
 <body>
     <div id="meetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
-        <picture class="saguaroLogo">
-            <source media="(max-width:500px)" srcset="images/saguaroLogoSmall.webp">
-            <source media="(max-width:700px)" srcset="images/saguaroLogoMedium.webp">
-            <source media="(max-width:1600px)" srcset="images/saguaroLogoLarge.webp">
-            <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo">
-        </picture>
+        <a href="index.html" class="saguaroLogo">
+            <picture >
+                <source media="(max-width:600px)" srcset="images/saguaroLogoSmall.webp">
+                <source media="(max-width:850px)" srcset="images/saguaroLogoMedium.webp">
+                <source media="(min-width:851px)" srcset="images/saguaroLogoLarge.webp">
+                <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
+            </picture>
+        </a>
         <h1 class="saguaroTitle">Saguaro Chamber</h1>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -39,21 +41,19 @@
         <div class="fullDate"></div>
         <a href="https://www.facebook.com/" class="facebook">
             <figure class="facebook">
-                <img src="images/facebookLogo.png" alt="Facebook Logo"
-                sizes="3vw" loading="lazy"
-                srcset="images/facebookLogoSmall.png 200w,
-                        images/facebookLogoMedium.png 500w,
-                        images/facebookLogoLarge.png 800w"
+                <img src="images/facebookLogo.jpg" alt="Facebook Logo" sizes="3vw" loading="lazy"
+                srcset="images/facebookLogoSmall.png 150w,
+                        images/facebookLogoMedium.png 450w,
+                        images/facebookLogoLarge.png 750w"
                         >
             </figure>
         </a>
         <a href="https://twitter.com/?lang=en" class="twitter">
             <figure class="twitter">
-                <img src="images/twitterLogo.png" alt="Twitter Logo"
-                    sizes="3vw" loading="lazy"
-                    srcset="images/twitterLogoSmall.png 200w,
-                            images/twitterLogoMedium.png 500w,
-                            images/twitterLogoLarge.png 800w"
+                <img src="images/twitterLogo.png" alt="Twitter Logo" sizes="3vw" loading="lazy"
+                    srcset="images/twitterLogoSmall.png 150w,
+                            images/twitterLogoMedium.png 450w,
+                            images/twitterLogoLarge.png 750w"
                             >
             </figure>
         </a>
@@ -63,7 +63,9 @@
         <div class="event">
             <h2>Ribbon Cutting</h2>
             <p><b>Marv's Gaming Emporium</b></p>
-            <p>Join us for the grand opening of Marv's Gaming Emporium</p>
+            <p >Join us for the grand opening of Marv's Gaming Emporium.</p>
+            <p>Address: 4688 Highland Drive</p>
+            <p>Time: 12:00PM</p>
         </div>
         <div class="callToAction">
             <h2 class="actionWelcome">Welcome to Pheonix.</h2>
@@ -84,7 +86,8 @@
         </div>
         <div class="news">
             <h2>News Release</h2>
-            <p class="newsText">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p class="newsHeader"><strong>Shack Craft</strong></p>
+            <p class="newsText"><br> Recently, a new business has popped up! Currently being built on 9728 Meadowbrook Ave., Shack Craft is one of the newest businesses to join our chamber. This store is planned to carry and supply all the crafting supllies you need.</p>
         </div>
         <div class="join">
             
@@ -101,7 +104,7 @@
 <footer id="footer">
     <picture class="saguaroLogoFooter">
         <source media="(max-width:500px)" srcset="images/logoFooterSmall.webp">
-        <source media="(max-width:700px)" srcset="images/logoFooterMedium.webp">
+        <source media="(max-width:800px)" srcset="images/logoFooterMedium.webp">
         <source media="(max-width:1600px)" srcset="images/logoFooterLarge.webp">
         <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
     </picture>
@@ -109,7 +112,7 @@
     <p class="addressFooter">13220 Cactus Rd, <br>Phenoix, AZ, 85003</p>
     <p class="emailFooter">saguaro@gmail.com</p>
     <p class="phoneFooter">(480) 867-5309</p>
-    <p class="locationFooter">Location Map</p>
+    <a href="https://goo.gl/maps/CLtA9cxRRksRAqpJA" class="locationFooter">Location Map</a>
     <p class="creatorInfo">@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ | Last Updated: <const id="lastUpdate"></const></p>
 </footer>
 <script src="scripts/getDate.js"></script>

@@ -35,6 +35,10 @@ h2{
     text-align: left;
 }
 
+ul li {
+    font-size: 36px;
+}
+
 footer {
     text-align: center;
     font-weight: bold;

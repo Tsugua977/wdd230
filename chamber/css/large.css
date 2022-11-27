@@ -90,7 +90,6 @@
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 200px;
     }
     
     .callToAction {
@@ -113,9 +112,8 @@
     }
 
     .actionJoin {
-        position: absolute;
-        top: 400px;
-        left: 400px;
+        top: 450px;
+        left: 350px;
         font-size: 24px;
         padding: 15px;
         padding: 10px 25px;
@@ -145,11 +143,14 @@
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
-        height: 200px;
     }
     
     .joinHeader{
         margin: 10px 50px; 
+    }
+
+    .joinHeader button {
+        margin: 50px 0 10px 0;
     }
 
     .spotlight {
@@ -158,8 +159,12 @@
         height: auto;
     }
 
+    main.indexMain section {
+        margin: 15px;
+    }
+
     section img.logoImgs {
-        height: 180px; 
+        height: 200px; 
     }
 
     .bugDiv {
@@ -180,6 +185,8 @@
         width: 70px;
     }
 
+
+    
     /*Discover Page*/
 
     .discoverMain {
@@ -249,6 +256,10 @@
         padding: .25rem;
         height: 45px;
         font-size: 18px;
+    }
+
+    .thankYou {
+        font-size: 32px;
     }
 
     /*Contact Page*/
