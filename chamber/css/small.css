@@ -115,17 +115,19 @@ nav ul.open {
     align-self: center;
     justify-self: start;
     color: white;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 div.fullDate {
     grid-column: 1/6;
     grid-row: 3/4;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     padding-top: 5px;
     
 }
+
+
 
 .facebook {
     grid-column: 3/4;
@@ -299,6 +301,10 @@ div {
     text-align: center;
 }
 
+.joinSpacing {
+    margin: 40px;
+}
+
 .joinHeader {
     display: block;
     background-color: #69cdf2;
@@ -420,7 +426,7 @@ picture.saguaroLogoFooter {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, auto);
     grid-gap: 1em;
-    margin: 10px 60px;
+    margin: 10px 80px;
 }
 
 .population {

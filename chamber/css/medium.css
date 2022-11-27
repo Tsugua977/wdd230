@@ -180,6 +180,10 @@
         font-size: 24px;
     }
 
+    .joinMain form p {
+        font-size: 24px;
+    }
+
     form label.applicant input, form label.applicant select {
         font-size: 24px;
         padding: 1rem 0;

@@ -243,6 +243,10 @@
         font-size: 16px;
     }
 
+    .joinMain form p {
+        font-size: 16px;
+    }
+
     form label.applicant input, form label.applicant select {
         font-size: 16px;
         padding: 0.5rem 0;
