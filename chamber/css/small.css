@@ -299,10 +299,11 @@ div {
     text-align: center;
 }
 
-.joinHeader button {
+.joinHeader {
+    display: block;
     background-color: #69cdf2;
     color: white;
-    margin: 10px 0 10px 0;
+    margin: 10px 300px 10px 300px;
     padding: 10px 60px;
     font-family: 'Oswald', serif, sans-serif;
     font-size: 32px;

@@ -73,19 +73,21 @@
     </main>
 </body>
 
-<footer id="footer">
-    <picture class="saguaroLogoFooter">
-        <source media="(max-width:500px)" srcset="images/logoFooterSmall.webp">
-        <source media="(max-width:700px)" srcset="images/logoFooterMedium.webp">
-        <source media="(max-width:1600px)" srcset="images/logoFooterLarge.webp">
-        <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
-    </picture>
+<footer>
+    <a href="index.html" class="saguaroLogo">
+        <picture class="saguaroLogoFooter">
+            <source media="(max-width:500px)" srcset="images/logoFooterSmall.webp">
+            <source media="(max-width:800px)" srcset="images/logoFooterMedium.webp">
+            <source media="(max-width:1600px)" srcset="images/logoFooterLarge.webp">
+            <img src="images/saguaroChamberLogoWebp.webp" alt="Saguaro Chamber's Logo" loading="lazy">
+        </picture>
+    </a>
     <p class="nameFooter">Saguaro Chamber</p>
     <p class="addressFooter">13220 Cactus Rd, <br>Phenoix, AZ, 85003</p>
     <p class="emailFooter">saguaro@gmail.com</p>
     <p class="phoneFooter">(480) 867-5309</p>
-    <p class="locationFooter">Location Map</p>
-    <p class="creatorInfo">@ <const id="year"></const> | August Pelissero | WDD230 Project | Buckeye, AZ | Last Updated: <const id="lastUpdate"></const></p>
+    <a href="https://goo.gl/maps/CLtA9cxRRksRAqpJA" class="locationFooter">Location Map</a>
+    <p class="creatorInfo">@ <span id="year"></span> | August Pelissero | WDD230 Project | Buckeye, AZ | Last Updated: <span id="lastUpdate"></span></p>
 </footer>
 <script src="scripts/getDate.js"></script>
 <script src="scripts/hamburgerButton.js"></script>
