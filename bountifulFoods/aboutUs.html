@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <source>
+            <source>
+            <source>
+            <img src="" alt="company logo">
+        </picture>
+
+        <h1>Company Title</h1>
+
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="fresh.html">Fresh Drink</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <form method="get" action="contactThankYou.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <p>First Name*</p>
+                <label class="applicant"><input type="text" name="fname" placeholder="" required></label>
+                <p>Last Name*</p>
+                <label class="applicant"><input type="text" name="lname" placeholder="" required></label>
+                <p>Email*</p>
+                <label class="applicant"><input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <p>How Can We Help You?</p>
+                <label class="helpBox"><textarea name="questions" required></textarea></label>
+            </fieldset>
+
+            <h2>Historical Info</h2>
+            <p>Text of Historical Info</p>
+
+            <h2>Where We're Located</h2>
+            <p>Google Maps</p>
+    </main>
+
+    <footer>
+        <p>Follow Us Here</p>
+        <picture class="facebook">
+            <source>
+            <source>
+            <source>
+            <img src="" alt="Facebook Logo">
+        </picture>
+        <picture class="instagram">
+            <source>
+            <source>
+            <source>
+            <img src="" alt="Instagram Logo">
+        </picture>
+        <picture class="twitter">
+            <source>
+            <source>
+            <source>
+            <img src="" alt="Twitter Logo">
+        </picture>
+        <p>Last Updated<span id="lastUpdated"></span></p>
+    </footer>
+    <script src="javascript/hamburgerButton.js"></script>
+</body>
+</html>
