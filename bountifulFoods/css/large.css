@@ -1,0 +1,110 @@
+@media only screen and (min-width: 1000px) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        background-color: #40916c;
+        padding: 10px;
+    }
+    
+    .businessLogo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    
+    .companyName {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: st;
+        align-self: center;
+        font-size: 44px;
+    }
+    
+    nav {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 5px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgb(255, 255, 255);
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgb(255, 255, 255);
+    }
+
+    .indexMain {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        margin: 0 250px;
+        grid-gap: 2em;
+    }
+
+    .drinkCard {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+    }
+
+    .drinkCard h2 {
+        margin: 20px 0 20px 0;
+    }
+    
+    .drinkCard a {
+        display: inline-block;
+        padding: 10px 40px;
+        margin: 15px 10px;
+        color: white;
+        background-color: #40916c;
+    }
+
+    .numOfDrinks {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+    }
+    
+    .numOfDrinks p {
+        font-size: 18px;
+    }
+
+    .costalInformation {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+    .costalInformation div{
+        margin: 15px;
+    }
+
+    .costalInformation div.sanDiego {
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .costalInformation div.losAngeles{
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .weatherCard {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin: 0 200px;
+    }
+}

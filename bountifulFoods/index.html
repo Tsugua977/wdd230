@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&family=Solway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <picture>
+        <picture class="businessLogo">
             <source>
             <source>
             <source>
             <img src="" alt="company logo">
         </picture>
 
-        <h1>Company Title</h1>
+        <h1 class="companyName">Bountiful Foods</h1>
 
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -28,33 +33,10 @@
 
     </header>
 
-    <main>
-        <div class="costalInformation">
-            <div>
-                <picture>
-                    <source>
-                    <source>
-                    <source>
-                    <img src="" alt="Coastal Place 1">
-                </picture>
-                <h2>Name of first coastal area.</h2>
-                <p>Summary 1</p>
-            </div>
-            <div>
-                <picture>
-                    <source>
-                    <source>
-                    <source>
-                    <img src="" alt="Coastal Place 1">
-                </picture>
-                <h2>Name of second coastal area.</h2>
-                <p>Summary 2</p>
-            </div>
-        </div>
-
+    <main class="indexMain">
         <div class="drinkCard">
             <h2>Make a Drink!</h2>
-            <a href="fresh.html" class="freshLink">Create Drink</a>
+            <a href="fresh.html">Create Drink</a>
         </div>
 
         <div class="numOfDrinks">
@@ -62,39 +44,66 @@
             <p># Amount</p>
         </div>
 
+        <div class="costalInformation">
+            <div class="sanDiego">
+                <picture>
+                    <source>
+                    <source>
+                    <source>
+                    <img src="" alt="Coastal Place 1">
+                </picture>
+                <h2>San Diego</h2>
+                <p>Summary 1</p>
+            </div>
+            <div class="losAngeles">
+                <picture>
+                    <source>
+                    <source>
+                    <source>
+                    <img src="" alt="Coastal Place 1">
+                </picture>
+                <h2>Los Angeles</h2>
+                <p>Summary 2</p>
+            </div>
+        </div>
+
         <div class="weatherCard">
-            <img src="" alt="Current Weather Picture">
-            <p>Temperature</p>
-            <p>Weather Condition</p>
-            <p>Humidity</p>
+            <h2>Weather</h2>
+            <img src="" alt="Current Weather Picture" id="weatherImg">
+            <p id="temp">Temperature</p>
+            <p id="weatherType">Weather Condition</p>
+            <p id="humidity">Humidity</p>
             <!--Three Day Weather Forcast-->
-            <p>First Temp</p>
-            <p>Second Temp</p>
-            <p>Third Temp</p>
+            <p id="firstTemp">First Temp</p>
+            <p id="secondTemp">Second Temp</p>
+            <p id="thirdTemp">Third Temp</p>
         </div>
     </main>
 
     <footer>
-        <p>Follow Us Here</p>
-        <picture class="facebook">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Facebook Logo">
-        </picture>
-        <picture class="instagram">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Instagram Logo">
-        </picture>
-        <picture class="twitter">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Twitter Logo">
-        </picture>
-        <p>Last Updated<span id="lastUpdated"></span></p>
+        <p class="followUs">Follow Us Here</p>
+        <a href="https://www.facebook.com/" class="facebook">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/facebookLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/facebookLogoMedium.png">
+                <img src="images/facebookLogoLarge.png" alt="Facebook Logo">
+            </picture>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/instagramLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/instagramLogoMedium.png">
+                <img src="images/instagramLogoLarge.png" alt="Instagram Logo">
+            </picture>
+        </a>
+        <a href="https://www.pinterest.com/" class="pinterest">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/pinterestLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/pinterestLogoMedium.png">
+                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo">
+            </picture>
+        </a>
+        <p class="lastUpdate">Last Updated: <span id="lastUpdated"></span></p>
     </footer>
     <script src="javascript/hamburgerButton.js"></script>
 </body>
