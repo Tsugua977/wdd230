@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&family=Solway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <picture>
-            <source>
-            <source>
-            <source>
-            <img src="" alt="company logo">
+        <picture class="businessLogo">
+            <source media="(max-width: 500px)" srcset="images/bountifulFoodsLogoSmall.png">
+            <source media="(max-width: 900px)" srcset="images/bountifulFoodsLogoMedium.png">
+            <img src="images/bountifulFoodsLogoLarge.png" alt="Bountiful Foods logo.">
         </picture>
 
-        <h1>Company Title</h1>
+        <h1 class="companyName">Bountiful Foods</h1>
 
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -25,24 +29,23 @@
                 <li><a href="aboutUs.html">About Us</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-        <form>
-            <fieldset class="customerInfo">
-                <p>First Name</p>
+        <form class="fruitForm">
+            <fieldset class="">
+                <p>First Name <span class="redColor">*</span></p>
                 <label class=""><input type="text" name="fname" required></label>
-                <p>Last Name</p>
+                <p>Last Name <span class="redColor">*</span></p>
                 <label class=""><input type="text" name="lname" required></label>
-                <p>Email</p>
+                <p>Email <span class="redColor">*</span></p>
                 <label class=""><input type="email" name="email" required></label>
             </fieldset>
             <fieldset class="fruitSelect">
-                <p>Choose Three Fruits</p>
+                <p>Choose Three Fruits <span class="redColor">*</span></p>
             </fieldset>
             <fieldset class="instructions">
-                <p>Extra Instructions</p>
+                <p>Extra Instructions <span class="redColor">*</span></p>
                 <label class=""><textarea name="extraInfo"></textarea></label>
             </fieldset>
         </form>
@@ -51,26 +54,33 @@
     </main>
 
     <footer>
-        <p>Follow Us Here</p>
-        <picture class="facebook">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Facebook Logo">
-        </picture>
-        <picture class="instagram">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Instagram Logo">
-        </picture>
-        <picture class="twitter">
-            <source>
-            <source>
-            <source>
-            <img src="" alt="Twitter Logo">
-        </picture>
-        <p>Last Updated<span id="lastUpdated"></span></p>
+        <p class="followUs">Follow Us Here:</p>
+        <a href="https://www.facebook.com/" class="facebook">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/facebookLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/facebookLogoMedium.png">
+                <img src="images/facebookLogoLarge.png" alt="Facebook Logo">
+            </picture>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/instagramLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/instagramLogoMedium.png">
+                <img src="images/instagramLogoLarge.png" alt="Instagram Logo">
+            </picture>
+        </a>
+        <a href="https://www.pinterest.com/" class="pinterest">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/pinterestLogoSmall.png">
+                <source media="(max-width: 800px)" srcset="images/pinterestLogoMedium.png">
+                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo">
+            </picture>
+        </a>
+        <p class="contactUs">Contact Us Here:</p>
+        <p class="address">3481 Camden Street,<br>Carlsbad, CA</p>
+        <p class="email">Email:<br>bountifulfoods@gmail.com</p>
+        <p class="phoneNum">Phone Number:<br>(480) 387-2466</p>
+        <p class="lastUpdate">Last Updated: <span id="lastUpdated"></span></p>
     </footer>
     <script src="javascript/hamburgerButton.js"></script>
 </body>

@@ -1,4 +1,5 @@
 @media only screen and (min-width: 1000px) {
+    /*Home Page*/
     header {
         display: grid;
         grid-template-columns: auto;
@@ -16,9 +17,6 @@
     .companyName {
         grid-column: 2/3;
         grid-row: 1/2;
-        justify-self: st;
-        align-self: center;
-        font-size: 44px;
     }
     
     nav {
@@ -107,4 +105,74 @@
         grid-row: 3/4;
         margin: 0 200px;
     }
+
+    /*Fresh Page*/
+    .fruitForm {
+        margin: 0 300px 0 340px;
+    }
+
+    /*About Us*/
+    .aboutMain {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(9, auto);
+    }
+
+    .contactHeader {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .contactAddress {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: end;
+    }
+
+    .contactEmail {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .contactPhone {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: start;
+    }
+
+    .historicalHeader {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .historicalInfo {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .locationHeader {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .googleMap {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    .formHeader {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .contactForm {
+        grid-column: 1/4;
+        grid-row: 8/9;
+        margin: 0 300px 0 340px;
+    }
+
+    input.submitBtn {
+        margin: 10px 200px;
+    }
+
 }
