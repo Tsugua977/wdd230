@@ -1,3 +1,5 @@
-let updated = document.lastModified;
+let updated = new Date(document.lastModified);
 
-document.getElementById("lastUpdate").innerHTML = updated;
+console.log(updated);
+
+document.getElementById('lastUpdated').innerHTML = updated;

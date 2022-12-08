@@ -16,7 +16,7 @@
         <picture class="businessLogo">
             <source media="(max-width: 500px)" srcset="images/bountifulFoodsLogoSmall.png">
             <source media="(max-width: 900px)" srcset="images/bountifulFoodsLogoMedium.png">
-            <img src="images/bountifulFoodsLogoLarge.png" alt="Bountiful Foods logo.">
+            <img src="images/bountifulFoodsLogoLarge.png" alt="Bountiful Foods logo." loading="lazy">
         </picture>
 
         <h1 class="companyName">Bountiful Foods</h1>
@@ -47,7 +47,7 @@
                 <picture>
                     <source media="(max-width: 500px)" srcset="images/sanDiegoSmall.png">
                     <source media="(max-width: 900px)" srcset="images/sanDiegoMedium.png">
-                    <img src="images/sanDiegoLarge.png" alt="San Diego City" class="costalCities">
+                    <img src="images/sanDiegoLarge.png" alt="San Diego City" class="costalCities" loading="lazy">
                 </picture>
                 <h2>San Diego</h2>
                 <p>San Diego is California’s second largest city, supporting 1.3 million people in the city. 
@@ -62,7 +62,7 @@
                 <picture>
                     <source media="(max-width: 500px)" srcset="images/losAngelesSmall.png">
                     <source media="(max-width: 900px)" srcset="images/losAngelesMedium.png">
-                    <img src="images/losAngelesLarge.png" alt="Los Angeles at Sunset" class="costalCities">
+                    <img src="images/losAngelesLarge.png" alt="Los Angeles at Sunset" class="costalCities" loading="lazy">
                 </picture>
                 <h2>Los Angeles</h2>
                 <p>Los Angeles is the biggest city in California with a population of 3.9 million. It is the state’s cultural, 
@@ -78,11 +78,12 @@
 
         <div class="weatherCard">
             <h2>Weather</h2>
-            <img src="" alt="Current Weather Picture" id="weatherImg">
+            <img src="" id="weatherImg" loading="lazy">
             <p id="temp">Temperature</p>
             <p id="weatherType">Weather Condition</p>
             <p id="humidity">Humidity</p>
             <!--Three Day Weather Forcast-->
+            <p class="forcastTitle"> 3 Day Weather Forcast </p>
             <p id="firstTemp">First Temp</p>
             <p id="secondTemp">Second Temp</p>
             <p id="thirdTemp">Third Temp</p>
@@ -95,21 +96,21 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="images/facebookLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/facebookLogoMedium.png">
-                <img src="images/facebookLogoLarge.png" alt="Facebook Logo">
+                <img src="images/facebookLogoLarge.png" alt="Facebook Logo" loading="lazy">
             </picture>
         </a>
         <a href="https://www.instagram.com/" class="instagram">
             <picture>
                 <source media="(max-width: 600px)" srcset="images/instagramLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/instagramLogoMedium.png">
-                <img src="images/instagramLogoLarge.png" alt="Instagram Logo">
+                <img src="images/instagramLogoLarge.png" alt="Instagram Logo" loading="lazy">
             </picture>
         </a>
         <a href="https://www.pinterest.com/" class="pinterest">
             <picture>
                 <source media="(max-width: 600px)" srcset="images/pinterestLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/pinterestLogoMedium.png">
-                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo">
+                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo" loading="lazy">
             </picture>
         </a>
         <p class="contactUs">Contact Us Here:</p>
@@ -120,5 +121,6 @@
     </footer>
     <script src="javascript/hamburgerButton.js"></script>
     <script src="javascript/lastUpdated.js"></script>
+    <script src="javascript/weatherAPI.js"></script>
 </body>
 </html>
