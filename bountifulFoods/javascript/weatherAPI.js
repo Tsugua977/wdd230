@@ -35,7 +35,7 @@ function displayResults(weatherData) {
 
     currentTemp.innerHTML = `${temp}&deg;F`;
     weatherDescr.textContent = description;
-    humidity.textContent = `Humidity: ${humid}`;
+    humidity.textContent = `Humidity: ${humid}%`;
 
     let temp1 = weatherData.list[8].main.temp.toFixed(0);
     let temp2 = weatherData.list[16].main.temp.toFixed(0);

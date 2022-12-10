@@ -1,4 +1,3 @@
-
 const requestURL = 'json/data.json';
 
 fetch(requestURL)
@@ -12,7 +11,8 @@ fetch(requestURL)
         for (const business of businesses)
             if (business.membershipLevel >= 3) {
                 tierBusinesses.push(business);
-            console.log(tierBusinesses);}
+            console.log(tierBusinesses);
+            }
         
         var firstRan = Math.floor(Math.random() * tierBusinesses.length);
         var secondRan = Math.floor(Math.random() * tierBusinesses.length);
