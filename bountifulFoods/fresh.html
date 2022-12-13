@@ -35,11 +35,11 @@
         <form class="fruitForm">
             <fieldset class="">
                 <p>First Name <span class="redColor">*</span></p>
-                <label class=""><input type="text" name="fname" required></label>
-                <p>Last Name <span class="redColor">*</span></p>
-                <label class=""><input type="text" name="lname" required></label>
+                <label><input type="text" name="fname" class="firstName" required></label>
                 <p>Email <span class="redColor">*</span></p>
-                <label class=""><input type="email" name="email" required></label>
+                <label><input type="email" name="email" class="email" required></label>
+                <p>Phone Number <span class="redColor">*</span></p>
+                <label><input type="tel" name="phone" class="phoneNum" required></label>
             </fieldset>
             <fieldset class="fruitSelect">
                 <p>Choose Three Fruits <span class="redColor">*</span></p>
@@ -52,11 +52,15 @@
             </fieldset>
             <fieldset class="instructions">
                 <p>Extra Instructions <span class="redColor">*</span></p>
-                <label class=""><textarea name="extraInfo"></textarea></label>
+                <label><textarea name="extraInfo" class="userInfo"></textarea></label>
             </fieldset>
+            <input type="submit" value="Get Drink" id="fruitBtn">
         </form>
-        <input type="submit" value="Get Drink" class="fruitBtn">
-        <p>Output</p>
+        
+
+        <div class="drinkDiv">
+            <p class="placeholderText">Your drink information will appear here once done.</p>
+        </div>
     </main>
 
     <footer>

@@ -295,13 +295,24 @@ footer p {
     color: red;
 }
 
-input.fruitBtn {
+#fruitBtn {
     text-align: center;
     padding: 10px;
     font-size: 24px;
     font-family: 'Solway', serif, sans-serif;
 
     background-color: #52b788;
+    margin: 10px auto;
+}
+
+#fruitBtn:hover {
+    background-color: #40916c;
+    color: white;
+}
+
+#fruitBtn:active {
+    background-color: #52b788;
+    color: black;
 }
 
 fieldset.fruitSelect label input {
