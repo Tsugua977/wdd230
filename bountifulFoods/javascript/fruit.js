@@ -1,8 +1,9 @@
 const requestURL = 'json/fruits.json';
-let incrementsFruit = 0;
-let incrementsLabel = 0;
-selectedFruitsList = [];
-let outputResult = true;
+newStorage = 0;
+let outputResult = null;
+localStorage.setItem('drinksSubmited', 0);
+let drinksStorage = localStorage.getItem('drinksSubmited');
+console.log(drinksStorage);
 
 fetch(requestURL)
     .then(function (response) {
@@ -14,12 +15,20 @@ fetch(requestURL)
         fruitsData.forEach(displayFruits);
     
     const fruitBtn = document.getElementById('fruitBtn');
-    fruitBtn.addEventListener('click', () => {selectedFruitsList = checkOutput(fruitsData)});
+    fruitBtn.addEventListener('click', clearDisplay);
+    fruitBtn.addEventListener('click', (event) => {newStorage = checkOutput(fruitsData, event, drinksStorage)});
 
+    
+    //drinksStorage == newStorage;
+    //console.log(newStorage);
+    
 
 });
 
-function checkOutput(fruits) {
+
+
+function checkOutput(fruits, event, storage) {
+    event.preventDefault();
 
     let firstName = document.querySelector('.firstName').value;
     let email = document.querySelector('.email').value;
@@ -76,7 +85,7 @@ function checkOutput(fruits) {
     console.log('In List', fruitsList);
     console.log('First Fruit: ', fruitsList[0].name);
 
-    let drinkDiv = document.querySelector('.drinkDiv')
+    let drinkDiv = document.querySelector('.drinkDiv');
 
     console.log(firstName);
     console.log(email);
@@ -100,6 +109,7 @@ function checkOutput(fruits) {
     let calories = document.createElement('p');
 
     drinkHeading.innerHTML = 'Your Drink';
+    drinkHeading.setAttribute('id', 'checkIfEmpty');
     nameDisplay.innerHTML = `First Name: ${firstName}`;
     emailDisplay.innerHTML = `Email: ${email}`;
     phoneDisplay.innerHTML = `Phone Number: ${phoneNum}`;
@@ -116,13 +126,11 @@ function checkOutput(fruits) {
     orderDate.innerHTML = `Order Date: ${dateTime}`;
     drinkInfo.innerHTML = 'Fruit Drink Information';
 
-    carbohydrates.innerHTML = fruitsList[0].nutritions.carbohydrates + fruitsList[1].nutritions.carbohydrates + fruitsList[2].nutritions.carbohydrates;
-    protein.innerHTML = fruitsList[0].nutritions.protein + fruitsList[1].nutritions.protein + fruitsList[2].nutritions.protein;
-    fat.innerHTML = fruitsList[0].nutritions.fat + fruitsList[1].nutritions.fat + fruitsList[2].nutritions.fat;
-    sugar.innerHTML = fruitsList[0].nutritions.sugar + fruitsList[1].nutritions.sugar + fruitsList[2].nutritions.sugar;
-    calories.innerHTML = fruitsList[0].nutritions.calories + fruitsList[1].nutritions.calories + fruitsList[2].nutritions.calories;
-
-    //drinkDiv.removeChild(p);
+    carbohydrates.innerHTML = `Carbohydrates: ${Math.ceil(fruitsList[0].nutritions.carbohydrates + fruitsList[1].nutritions.carbohydrates + fruitsList[2].nutritions.carbohydrates)} grams`;
+    protein.innerHTML = `Protein: ${Math.ceil(fruitsList[0].nutritions.protein + fruitsList[1].nutritions.protein + fruitsList[2].nutritions.protein)} grams`;
+    fat.innerHTML = `Fat: ${Math.ceil(fruitsList[0].nutritions.fat + fruitsList[1].nutritions.fat + fruitsList[2].nutritions.fat)} grams`;
+    sugar.innerHTML = `Sugar: ${Math.ceil(fruitsList[0].nutritions.sugar + fruitsList[1].nutritions.sugar + fruitsList[2].nutritions.sugar)} grams`;
+    calories.innerHTML = `Calories: ${Math.ceil(fruitsList[0].nutritions.calories + fruitsList[1].nutritions.calories + fruitsList[2].nutritions.calories)} calories`;
 
     drinkDiv.appendChild(drinkHeading);
     drinkDiv.appendChild(nameDisplay);
@@ -140,9 +148,33 @@ function checkOutput(fruits) {
     drinkDiv.appendChild(sugar);
     drinkDiv.appendChild(calories);
 
-    console.log(drinkDiv);
+    if (localStorage.storage) {
+        localStorage.storage = Number(localStorage.storage) + 1;
+        console.log(localStorage.storage);
+    }
 
-    document.main.appendChild(drinkDiv);
+    //console.log(storage);
+    //storage = Number(storage + 1);
+    //console.log(storage);
+
+    //return storage;
+
+}
+
+function clickCounter() {
+    
+}
+
+function clearDisplay() {
+    let drinkDiv = document.querySelector('.drinkDiv');
+
+    let child = drinkDiv.lastElementChild;
+    while (child) {
+        if (child == undefined) {
+            break;
+        }
+        drinkDiv.removeChild(child);
+    }
 }
 
 function displayFruits(fruits) {
