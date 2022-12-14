@@ -322,6 +322,20 @@ footer p {
     grid-row: 3/4;
 }
 
+fieldset {
+    background-color: #95d5b2;
+}
+
+fieldset label input {
+    width: 94%;
+    padding: 10px;
+}
+
+fieldset label textarea {
+    width: 94%;
+    padding: 10px;
+}
+
 .redColor {
     color: red;
 }
@@ -350,11 +364,12 @@ footer p {
 }
 
 fieldset.fruitSelect label input {
-    width: 20px;
+    width: 96%;
+
 }
 
 .drinkDiv {
-    margin: 0 15px;
+    margin: 5px;
     padding: 10px;
 }
 
