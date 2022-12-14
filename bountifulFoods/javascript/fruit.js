@@ -112,8 +112,8 @@ function checkOutput(fruits, event) {
 
     const today = new Date();
     const currentDate = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
-    const time = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
-    const dateTime = "Date: "+currentDate+" | Time: "+time;
+    
+    const dateTime = `Date: ${currentDate}`;
 
     orderDate.innerHTML = `Order Date: ${dateTime}`;
     drinkInfo.innerHTML = 'Fruit Drink Information';
