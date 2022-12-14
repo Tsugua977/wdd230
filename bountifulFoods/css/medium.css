@@ -1,9 +1,26 @@
 @media only screen and (min-width: 600px){
     /*Home Page*/
     .businessLogo {
-        justify-self: end;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .companyName {
+        justify-self: center;
     }
     
+    #hamburgerBtn {
+        margin: 20px 30px;
+    }
+    
+    #hamburgerBtn span {
+        font-size: 38px;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+    }
+
     .indexMain{
         display: grid;
         grid-template-columns: auto;
@@ -43,10 +60,6 @@
         grid-column: 1/2;
         grid-row: 2/3;
         margin: 0 80px;
-    }
-    
-    .numOfDrinks p {
-        font-size: 18px;
     }
 
     .costalInformation {
@@ -102,15 +115,4 @@
     }
 
     /*About Us Page*/
-    .googleMap {
-        width: 50%;
-    }
-
-    .contactForm {
-        margin: 0 100px;
-    }
-
-    input.submitBtn {
-        margin: 10px 150px;
-    }
 }

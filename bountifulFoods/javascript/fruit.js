@@ -1,9 +1,6 @@
 const requestURL = 'json/fruits.json';
 newStorage = 0;
 let outputResult = null;
-localStorage.setItem('drinksSubmited', 0);
-let drinksStorage = localStorage.getItem('drinksSubmited');
-console.log(drinksStorage);
 
 fetch(requestURL)
     .then(function (response) {
@@ -15,25 +12,18 @@ fetch(requestURL)
         fruitsData.forEach(displayFruits);
     
     const fruitBtn = document.getElementById('fruitBtn');
-    fruitBtn.addEventListener('click', clearDisplay);
-    fruitBtn.addEventListener('click', (event) => {newStorage = checkOutput(fruitsData, event, drinksStorage)});
+    fruitBtn.addEventListener('click', (event) => {newStorage = checkOutput(fruitsData, event)});
 
-    
-    //drinksStorage == newStorage;
-    //console.log(newStorage);
-    
 
 });
 
-
-
-function checkOutput(fruits, event, storage) {
+function checkOutput(fruits, event) {
     event.preventDefault();
 
     let firstName = document.querySelector('.firstName').value;
     let email = document.querySelector('.email').value;
     let phoneNum = document.querySelector('.phoneNum').value;
-    let instructions = document.querySelector('.userInfo').value; 
+    let instructions = document.querySelector('.specialInstructions').value; 
 
     outputResult = outputResult;
 
@@ -92,6 +82,8 @@ function checkOutput(fruits, event, storage) {
     console.log(phoneNum);
     console.log(instructions);
 
+    clearDisplay();
+
     let drinkHeading = document.createElement('h2');
     let nameDisplay = document.createElement('p');
     let emailDisplay = document.createElement('p');
@@ -115,8 +107,8 @@ function checkOutput(fruits, event, storage) {
     phoneDisplay.innerHTML = `Phone Number: ${phoneNum}`;
     fruit1.innerHTML = `First Fruit: ${fruitsList[0].name}`;
     fruit2.innerHTML = `Second Fruit: ${fruitsList[1].name}`;
-    fruit3.innerHTML = `Third Fruit ${fruitsList[2].name}`;
-    specialInstructions.innerHTML = `Special Instructions ${instructions}`;
+    fruit3.innerHTML = `Third Fruit: ${fruitsList[2].name}`;
+    specialInstructions.innerHTML = `Extra Instructions: ${instructions}`;
 
     const today = new Date();
     const currentDate = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
@@ -148,33 +140,18 @@ function checkOutput(fruits, event, storage) {
     drinkDiv.appendChild(sugar);
     drinkDiv.appendChild(calories);
 
-    if (localStorage.storage) {
-        localStorage.storage = Number(localStorage.storage) + 1;
-        console.log(localStorage.storage);
+    if (localStorage.drinksSubmited) {
+        localStorage.drinksSubmited = Number(localStorage.drinksSubmited) + 1;
+        console.log(localStorage.drinksSubmited);
+        localStorage.setItem('drinksSubmited', localStorage.drinksSubmited);
     }
 
-    //console.log(storage);
-    //storage = Number(storage + 1);
-    //console.log(storage);
-
-    //return storage;
-
-}
-
-function clickCounter() {
-    
 }
 
 function clearDisplay() {
     let drinkDiv = document.querySelector('.drinkDiv');
 
-    let child = drinkDiv.lastElementChild;
-    while (child) {
-        if (child == undefined) {
-            break;
-        }
-        drinkDiv.removeChild(child);
-    }
+    drinkDiv.innerHTML = '';
 }
 
 function displayFruits(fruits) {

@@ -4,7 +4,7 @@
 
     header {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto 20px;
         grid-template-rows: repeat(2, auto);
         background-color: #40916c;
         padding: 10px;
@@ -19,10 +19,15 @@
     .companyName {
         grid-column: 2/3;
         grid-row: 1/2;
+        justify-self: left;
     }
     
+    #hamburgerBtn {
+        visibility: hidden;
+    }
+
     nav {
-        grid-column: 1/3;
+        grid-column: 1/4;
         grid-row: 2/3;
         margin: 15px;
     }
@@ -76,10 +81,6 @@
         grid-column: 2/3;
         grid-row: 1/2;
         margin: 0;
-    }
-    
-    .numOfDrinks p {
-        font-size: 18px;
     }
 
     .costalInformation {
@@ -136,65 +137,63 @@
     /*About Us*/
     .aboutMain {
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(7, auto);
+        grid-template-columns: 25vw repeat(3, auto) 25vw;
+        grid-template-rows: repeat(8, auto);
     }
 
     .contactHeader {
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 1/2;
     }
 
     .contactAddress {
-        grid-column: 1/2;
+        grid-column: 2/3;
         grid-row: 2/3;
         justify-self: end;
     }
 
     .contactEmail {
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 2/3;
     }
 
     .contactPhone {
-        grid-column: 3/4;
+        grid-column: 4/5;
         grid-row: 2/3;
         justify-self: start;
     }
 
     .historicalHeader {
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 3/4;
     }
 
     .historicalInfo {
-        grid-column: 1/4;
+        grid-column: 2/5;
         grid-row: 4/5;
     }
 
-    .locationHeader {
-        grid-column: 2/3;
+    .aboutUsHeader {
+        grid-column: 3/4;
         grid-row: 5/6;
     }
 
-    iframe.googleMap {
-        grid-column: 2/3;
+    .aboutUsInfo {
+        grid-column: 2/5;
         grid-row: 6/7;
     }
 
-    .formHeader {
-        grid-column: 2/3;
+    .locationHeader {
+        grid-column: 3/4;
         grid-row: 7/8;
     }
 
-    .contactForm {
-        grid-column: 1/4;
+    .googleMap {
+        grid-column: 2/5;
         grid-row: 8/9;
-        margin: 0 300px 0 340px;
-    }
 
-    input.submitBtn {
-        margin: 10px 200px;
+        width: 100%;
+        height: 100%;
     }
 
 }
