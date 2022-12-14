@@ -34,7 +34,6 @@ header {
 .companyName {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-left: 5px;
     color: white;
     font-size: 28px;
     justify-self: left;
@@ -65,12 +64,12 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: rgba(115, 115, 115, 0.5);
+    background-color: #52b788;
     color: white;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #2d6a4f;
 }
 
 nav ul {
@@ -287,8 +286,32 @@ footer p {
 }
 
 /*Fresh Page*/
+.drinkTitle {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .fruitForm {
     margin: 0 20px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+}
+
+.userInfo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.fruitSelect {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.instructions {
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .redColor {
@@ -296,6 +319,9 @@ footer p {
 }
 
 #fruitBtn {
+    grid-column: 1/2;
+    grid-row: 4/5;
+
     text-align: center;
     padding: 10px;
     font-size: 24px;
@@ -319,11 +345,16 @@ fieldset.fruitSelect label input {
     width: 20px;
 }
 
+.drinkDiv {
+    margin: 0 15px;
+    padding: 10px;
+}
+
 /*About Us Page*/
 .aboutMain {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(12, auto);
+    grid-template-rows: repeat(9, auto);
 }
 
 .contactHeader {
@@ -368,13 +399,14 @@ fieldset.fruitSelect label input {
     text-align: center;
 }
 
-.googleMap {
+iframe.googleMap {
     grid-column: 1/2;
     grid-row: 8/9;
     justify-self: center;
     margin: 20px;
     width: 90%;
     height: 100%;
+    
 }
 
 .formHeader {

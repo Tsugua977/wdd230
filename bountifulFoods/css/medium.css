@@ -84,6 +84,23 @@
         margin: 0 100px;
     }
 
+    .drinkDiv {
+        margin: 0 130px;
+    }
+
+    fieldset label input {
+        font-size: 20px;
+    }
+
+    fieldset.fruitSelect select {
+        padding: 5px 45px 5px 0px;
+        font-size: 20px;
+    }
+
+    fieldset label textarea {
+        font-size: 20px;
+    }
+
     /*About Us Page*/
     .googleMap {
         width: 50%;

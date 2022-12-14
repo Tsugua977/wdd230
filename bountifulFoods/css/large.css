@@ -4,8 +4,8 @@
 
     header {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(2, auto);
         background-color: #40916c;
         padding: 10px;
     }
@@ -13,7 +13,7 @@
     .businessLogo {
         grid-column: 1/2;
         grid-row: 1/2;
-        justify-self: center;
+        justify-self: right;
     }
     
     .companyName {
@@ -22,9 +22,9 @@
     }
     
     nav {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        margin: 5px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: 15px;
     }
 
     nav button {
@@ -126,14 +126,18 @@
 
     /*Fresh Page*/
     .fruitForm {
-        margin: 0 300px 0 340px;
+        margin: 0 300px 0 300px;
+    }
+
+    .drinkDiv {
+        margin: 0 500px;
     }
 
     /*About Us*/
     .aboutMain {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(9, auto);
+        grid-template-rows: repeat(7, auto);
     }
 
     .contactHeader {
@@ -173,7 +177,7 @@
         grid-row: 5/6;
     }
 
-    .googleMap {
+    iframe.googleMap {
         grid-column: 2/3;
         grid-row: 6/7;
     }

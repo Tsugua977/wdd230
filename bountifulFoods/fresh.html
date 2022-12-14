@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
+    <title>Fresh Drink</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -16,7 +16,7 @@
         <picture class="businessLogo">
             <source media="(max-width: 500px)" srcset="images/bountifulFoodsLogoSmall.png">
             <source media="(max-width: 900px)" srcset="images/bountifulFoodsLogoMedium.png">
-            <img src="images/bountifulFoodsLogoLarge.png" alt="Bountiful Foods logo.">
+            <img src="images/bountifulFoodsLogoLarge.png" alt="Bountiful Foods logo." loading="lazy">
         </picture>
 
         <h1 class="companyName">Bountiful Foods</h1>
@@ -32,8 +32,9 @@
     </header>
 
     <main>
+        <h1 class="drinkTitle">Create a Drink!</h1>
         <form class="fruitForm">
-            <fieldset class="">
+            <fieldset class="userInfo">
                 <p>First Name <span class="redColor">*</span></p>
                 <label><input type="text" name="fname" class="firstName" required></label>
                 <p>Email <span class="redColor">*</span></p>
@@ -54,9 +55,8 @@
                 <p>Extra Instructions <span class="redColor">*</span></p>
                 <label><textarea name="extraInfo" class="userInfo"></textarea></label>
             </fieldset>
-            <input type="submit" value="Get Drink" id="fruitBtn">
+            <input type="submit" value="Get Drink" id="fruitBtn" onclick="clickCounter()">
         </form>
-        
 
         <div class="drinkDiv">
             <p class="placeholderText">Your drink information will appear here once done.</p>
@@ -69,21 +69,21 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="images/facebookLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/facebookLogoMedium.png">
-                <img src="images/facebookLogoLarge.png" alt="Facebook Logo">
+                <img src="images/facebookLogoLarge.png" alt="Facebook Logo" loading="lazy">
             </picture>
         </a>
         <a href="https://www.instagram.com/" class="instagram">
             <picture>
                 <source media="(max-width: 600px)" srcset="images/instagramLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/instagramLogoMedium.png">
-                <img src="images/instagramLogoLarge.png" alt="Instagram Logo">
+                <img src="images/instagramLogoLarge.png" alt="Instagram Logo" loading="lazy">
             </picture>
         </a>
         <a href="https://www.pinterest.com/" class="pinterest">
             <picture>
                 <source media="(max-width: 600px)" srcset="images/pinterestLogoSmall.png">
                 <source media="(max-width: 800px)" srcset="images/pinterestLogoMedium.png">
-                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo">
+                <img src="images/pinterestLogoLarge.png" alt="Pinterest Logo" loading="lazy">
             </picture>
         </a>
         <p class="contactUs">Contact Us Here:</p>
